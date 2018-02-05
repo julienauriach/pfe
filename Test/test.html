@@ -4,20 +4,22 @@
 
 
 <style>
-	.triggerElement{
+	.gachette{
 		background-color: red;
 		display: flex;
 		  justify-content: center;
 		  align-items: center;
 	}
 	#mouton{
-		margin: auto;
 	}
 	.page{
 		height: 100%;
 	}
-	body{
+	html, body{
 		background-color: yellow;
+		height: 100%;
+        margin: 0;
+        padding: 0;
 	}
 
 </style>
@@ -114,7 +116,7 @@
 	</section>
 		
 	
-	<section class="triggerElement">
+	<section class="gachette">
 		<div id="mouton">
 		<img src="http://vision.gel.ulaval.ca/~jflalonde/cours/4105/h15/tps/results/tp2/SEBEL83/images/lamb.jpg">
 		</div>
@@ -244,18 +246,20 @@
 	
 	<script src="js/jquery.scrollmagic.js"></script>
 	<!-- should be removed when development is finished -->
+	<script src="js/debug.addIndicators.js"></script>
 
 	<script>
 	var controller = new ScrollMagic.Controller();
 		// create a scene
 	new ScrollMagic.Scene({
-		triggerElement: '#objet2',
-		triggerHook: 0,
+		triggerElement: ".gachette",
         duration: $(window).height() - 100,
         reverse: true
     })
     .setPin("#mouton") // pins the element for the the scene's duration
+    .addIndicators()
     .addTo(controller); // assign the scene to the controller
+
 
 
 	</script>
