@@ -1,0 +1,59 @@
+html, body{
+	background-color: grey;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}  
+
+div{
+	text-align: center;
+	height: 100%;
+}
+
+
+.gachette{
+			background-color: red;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+.fini{
+	background-color: grey;
+}
+
+#mouton{
+}
+#objet0{
+	background-image:url(media/firstCover.png);
+	background-repeat:no-repeat;
+	background-position:100% 100%;
+
+	margin: 0px;
+	height: 100%;
+	cursor: pointer;
+}
+
+
+
+#objet1{
+	background-color: green;
+}
+
+#objet2{
+	background-color: red;
+}
+
+#objet3{
+	background-color: purple;
+}
+
+#objet4{
+	background-color: yellow;
+}
+
+.page{
+	height: 100%;
+}
+
+
