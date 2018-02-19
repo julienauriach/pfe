@@ -10,7 +10,7 @@ var controller = new ScrollMagic.Controller();
 	new ScrollMagic.Scene({
 		triggerElement: "#objet1",
 		triggerHook: 0,
-		duration: 547,
+		duration: 700,
         reverse: true
     })
 	    .setPin("#objet1") // pins the element for the the scene's duration

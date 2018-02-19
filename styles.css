@@ -27,7 +27,7 @@ div{
 
 /* options permettant d'avoir une image responsive dès le début, CSS3 tout simple */
 #objet0{
-	background:url(media/firstCover.png) no-repeat center fixed;
+	background:url('assets/images/firstCover.png') no-repeat center fixed;
 	margin:0;
 	padding:0;
 	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
@@ -38,6 +38,7 @@ div{
 
 #objet1{
 	background-color: green;
+	overflow: scroll;
 }
 
 #objet2{
