@@ -24,14 +24,14 @@ div{
 
 #mouton{
 }
-#objet0{
-	background-image:url(media/firstCover.png);
-	background-repeat:no-repeat;
-	background-position:100% 100%;
 
-	margin: 0px;
-	height: 100%;
-	cursor: pointer;
+/* options permettant d'avoir une image responsive dès le début, CSS3 tout simple */
+#objet0{
+	background:url(media/firstCover.png) no-repeat center fixed;
+	margin:0;
+	padding:0;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
 }
 
 
