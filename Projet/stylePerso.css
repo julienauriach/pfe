@@ -38,6 +38,7 @@ div{
 
 #objet1{
 	background-color: green;
+	overflow: scroll;
 }
 
 #objet2{
