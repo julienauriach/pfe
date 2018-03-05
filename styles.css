@@ -37,30 +37,32 @@ p{
 
 /* options permettant d'avoir une image responsive dès le début, CSS3 tout simple */
 #objet0{
-	background:url('assets/images/firstCover.png') no-repeat center fixed;
+	background-color: white;
 	margin:0;
 	padding:0;
-	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
-	background-size: cover; /* version standardisée */
 }
 
 
 
 #objet1{
-	background-color: green;
+	background:url('assets/images/fondChampagne.png') no-repeat center fixed;
 	overflow: scroll;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+	opacity:0.5;
+	filter:alpha(opacity=15);
 }
 
 #objet2{
-	background-color: red;
+	background-color: grey;
 }
 
 #objet3{
-	background-color: purple;
+	background-color: white;
 }
 
 #objet4{
-	background-color: yellow;
+	background-color: grey;
 }
 
 .page{
