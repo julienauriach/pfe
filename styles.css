@@ -45,6 +45,8 @@ p{
 
 	#objet1{
 		background-color: ##F3FDFF;
+		margin:0;
+		padding:0;
 	}
 
 	#objet2{
@@ -59,15 +61,26 @@ p{
 		background-color: #FED9E2;
 	}
 
+	/*RESPONSIVE*/
+
 #champagneIllustr1{
 	width: 100%;
 }
+ #franceBouteille{
+    	width: 80%;
+    }
 
-@media all and (max-width: 1024px)
+@media all and (min-width: 1024px)
 {
-    #bloc_page
+    #champagneIllustr1
     {
         width: auto;
     }
+
+    #franceBouteille{
+    	width: 40%;
+    }
 }
+
+
 
