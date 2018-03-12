@@ -12,7 +12,7 @@ div{
 }
 
 p{
-	margin:5%;
+	margin:8%;
 	font-family: 'Raleway';
 	text-indent:5%;
 	text-align: justify;
@@ -35,38 +35,39 @@ p{
 #mouton{
 }
 
-/* options permettant d'avoir une image responsive dès le début, CSS3 tout simple */
-#objet0{
-	background-color: white;
-	margin:0;
-	padding:0;
+/* Objets  */
+
+	#objet0{
+		background-color: white;
+		margin:0;
+		padding:0;
+	}
+
+	#objet1{
+		background-color: ##F3FDFF;
+	}
+
+	#objet2{
+		background-color: ##F3FDFF;
+	}
+
+	#objet3{
+		background-color: #FCFED9;
+	}
+
+	#objet4{
+		background-color: #FED9E2;
+	}
+
+#champagneIllustr1{
+	width: 100%;
 }
 
-
-
-#objet1{
-	background:url('assets/images/fondChampagne.png') no-repeat center fixed;
-	overflow: scroll;
-	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
-	background-size: cover; /* version standardisée */
-	opacity:0.5;
-	filter:alpha(opacity=15);
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
 }
-
-#objet2{
-	background-color: grey;
-}
-
-#objet3{
-	background-color: white;
-}
-
-#objet4{
-	background-color: grey;
-}
-
-.page{
-	height: 100%;
-}
-
 
