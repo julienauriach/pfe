@@ -3,24 +3,37 @@
     	<ul class="list-unstyled">
     		<li>
     			<button class="btn btn-link" @click="winePercentage = 70">
-    				Cabernet sauvignon
+    				Cabernet sauvignon (70%)
     			</button>
     		</li>
     		<li>
     			<button class="btn btn-link" @click="winePercentage = 20">
-    				Cabernet sauvignon
+    				Cabernet sauvignon (20%)
     			</button>
     		</li>
     		<li>
     			<button class="btn btn-link" @click="winePercentage = 10">
-    				Cabernet sauvignon
+    				Cabernet sauvignon (10%)
     			</button>
     		</li>
     	</ul>
     	<div class="glass">
-    		<div class="wine" :style="{ height: winePercentage + '%' }"></div>
-    		<img src="../assets/" />
+	    	<svg viewBox="0 0 337 518">
+				<path id="glass" d="M333.8,190.8C316.5,94.9,303.5,42.2,289.7,8.6L287.1,0H55.6l-3.5,8.6C38.3,42.3,26.2,94.1,4.6,190
+					c-12.1,51.8,0,107.1,32.8,152C63,377.5,99,401.9,137.9,411.4c0.8,3.3,1.6,6.7,2.2,10c1.7,9.6,3.4,22.6,5.1,38.2
+					c1.9,17.4,3.5,37.6,4.5,59.2h37.1c1-21.9,2.6-42.2,4.5-59.2c1.7-15.6,3.5-28.6,5.2-38.2c0.5-3,1.1-6,1.9-8.9
+					c34-7.4,67.6-28.6,93.1-60.2C328.7,307.4,344.2,248.2,333.8,190.8z M270.8,336.6c-28.6,35.5-69.2,55.4-105.6,52.8
+					c-40.6-3.5-79.6-26-107.3-63.2c-27.7-38.1-39-85.7-28.6-130.7C48.4,110.6,61.4,58.7,72.6,25.8h195.6c12.2,32,24.2,82.2,39.8,169.7
+					C316.7,245.7,303.7,297.6,270.8,336.6z"/>
+				<path id="wine" class="st0" d="M270.8,336.2c-28.6,35.5-69.2,55.4-105.6,52.8c-40.6-3.5-79.6-26-107.3-63.2
+					c-27.7-38.1-39-85.7-28.6-130.7C48.4,110.2,61.4,58.3,72.6,25.4h195.6c12.2,32,24.2,82.2,39.8,169.7
+					C316.7,245.3,303.7,297.2,270.8,336.2z" />
+				<mask id="wine_mask" x="0" y="0" width="337" :height="maskHeight" >
+				    <rect x="0" :y="maskY" width="337" :height="maskHeight" style="stroke:none; fill: #fff"/>
+				</mask>
+			</svg>
     	</div>
+
     </div>
 </template>
 
@@ -28,8 +41,16 @@
 	module.exports = {
 	    data: function() {
 	        return {
-	        	winePercentage: 0
+	        	winePercentage: 100
 	        }
+	    },
+	    computed: {
+	    	maskHeight: function() {
+	    		return Math.round(389 * (this.winePercentage / 100))
+	    	},
+	    	maskY: function() {
+	    		return 389 -  this.maskHeight
+	    	}
 	    }
 	}
 </script>
@@ -41,20 +62,19 @@
 	}
 
 	.glass {
-		border:10px solid black;
 		border-top: 0;
-		width:150px;
-		height:150px;
 		position: relative;
+		max-width: 350px;
+		margin:10px;
 	}
 
-	.wine {
-		position: absolute;
-		bottom:0;
-		left:0;
-		right:0;
-		background: red;
-		transition: height 500ms;
+	.glass svg {
 		z-index: 0;
+		width:100%;
 	}	
+
+	.glass svg #wine {
+		fill: #D62B3F;
+		mask: url('#wine_mask');
+	}
 </style>
