@@ -1,23 +1,21 @@
 <template>
     <div class="cepages">
-    	<ul class="list-unstyled">
-    		<li>
-    			<button class="btn btn-link" @click="winePercentage = 70">
-    				Cabernet sauvignon (70%)
+    	<ul class="list-unstyled row text-center">
+    		<li class="col-12" v-for="cepage in cepages" v-if="selectedCepage === null || selectedCepage === cepage ">
+    			<button class="btn btn-link btn-block" @click="selectCepage(cepage)">
+    				{{ cepage }}
     			</button>
-    		</li>
-    		<li>
-    			<button class="btn btn-link" @click="winePercentage = 20">
-    				Cabernet sauvignon (20%)
-    			</button>
-    		</li>
-    		<li>
-    			<button class="btn btn-link" @click="winePercentage = 10">
-    				Cabernet sauvignon (10%)
-    			</button>
+    			<div class="btn-group " v-if="selectedCepage === cepage">
+    				<button @click="selectPercentage(percentage)" class="btn btn-outline-dark" v-for="percentage in percentages">
+    					{{ percentage }}%
+    				</button>
+    			</div>
     		</li>
     	</ul>
     	<div class="glass">
+    		<div class="glass-message" v-if="message !== null">
+    			{{ message }}
+    		</div>
 	    	<svg viewBox="0 0 337 518">
 				<path id="glass" d="M333.8,190.8C316.5,94.9,303.5,42.2,289.7,8.6L287.1,0H55.6l-3.5,8.6C38.3,42.3,26.2,94.1,4.6,190
 					c-12.1,51.8,0,107.1,32.8,152C63,377.5,99,401.9,137.9,411.4c0.8,3.3,1.6,6.7,2.2,10c1.7,9.6,3.4,22.6,5.1,38.2
@@ -41,15 +39,50 @@
 	module.exports = {
 	    data: function() {
 	        return {
-	        	winePercentage: 100
+	        	selectedPercentage: null,
+	        	selectedCepage: null,
+	        	cepages: ['Cabernet Sauvignon', 'Merlot', 'Tougina Nacional'],
+	        	percentages: [10, 20, 40],
+	        	messages: {
+	        		'Cabernet Sauvignon': {
+	        			10: 'pas mal',
+	        			20: 'bof',
+	        			40: 'Affreux, le cabernet sauvignon lorem ipsum dolor sit amet'
+	        		},
+	        		'Merlot': {
+	        			10: 'pas mal',
+	        			20: 'bof',
+	        			40: 'affreux'
+	        		},
+	        		'Tougina Nacional': {
+	        			10: 'pas mal',
+	        			20: 'bof',
+	        			40: 'affreux'
+	        		}
+	        	}
 	        }
+	    },
+	    methods: {
+	    	selectCepage: function(cepage) {
+	    		this.selectedCepage = this.selectedCepage === null ? cepage : null;
+	    		this.selectedPercentage = null
+	    	},
+	    	selectPercentage: function(percentage) {
+	    		this.selectedPercentage = percentage
+	    	}
 	    },
 	    computed: {
 	    	maskHeight: function() {
-	    		return Math.round(389 * (this.winePercentage / 100))
+	    		return Math.round(389 * (this.selectedPercentage / 100))
 	    	},
 	    	maskY: function() {
 	    		return 389 -  this.maskHeight
+	    	},
+	    	message: function() {
+	    		if (this.selectedCepage && this.selectedPercentage) {
+	    			return this.messages[this.selectedCepage][this.selectedPercentage]
+	    		} 
+	    		return null
 	    	}
 	    }
 	}
@@ -57,7 +90,6 @@
 
 <style scoped>
 	.cepages {
-	    background-color: #ffe;
 	    padding:2em;
 	}
 
@@ -65,7 +97,23 @@
 		border-top: 0;
 		position: relative;
 		max-width: 350px;
-		margin:10px;
+		margin:10px auto;
+		display: block;
+	}
+
+	.glass-message {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 1.5em;
+		font-weight:bold;
+		display: block;
+		padding: 0.5em;
+		text-align: center;
+		line-height: 1.1;
+		background: rgba(0, 0, 0, 0.2);
+		border-radius: 0.5em;
 	}
 
 	.glass svg {
