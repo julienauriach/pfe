@@ -2,7 +2,7 @@
     <div class="cepages">
     	<ul class="list-unstyled row text-center">
     		<li class="col-12" v-for="cepage in cepages" v-if="selectedCepage === null || selectedCepage === cepage ">
-    			<button class="btn btn-block" @click="selectCepage(cepage)">
+    			<button class="btn-primary btn-primary.raised float-left" @click="selectCepage(cepage)">
     				<img src="../../assets/images/grappe-01.svg" class="grappe"/> {{ cepage }}
     			</button>
     			<div class="btn-group " v-if="selectedCepage === cepage">
@@ -94,6 +94,25 @@
 	}
 	.cepages {
 	    padding:2em;
+	}
+
+	.btn-primary {
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 2px;
+    color: #ffffff;
+    background: #CA80B8;
+	}
+
+	.btn-primary.raised {
+	box-shadow: 0 20px 0 0 #007299;
+	}
+
+	.btn-primary.raised:active, .btn-primary.raised.active {
+	background: #33a6cc;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
 	}
 
 	.glass {
