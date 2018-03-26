@@ -2,8 +2,8 @@
     <div class="cepages">
     	<ul class="list-unstyled row text-center">
     		<li class="col-12" v-for="cepage in cepages" v-if="selectedCepage === null || selectedCepage === cepage ">
-    			<button class="btn btn-link btn-block" @click="selectCepage(cepage)">
-    				{{ cepage }}
+    			<button class="btn btn-block" @click="selectCepage(cepage)">
+    				<img src="../../assets/images/grappe-01.svg" class="grappe"/> {{ cepage }}
     			</button>
     			<div class="btn-group " v-if="selectedCepage === cepage">
     				<button @click="selectPercentage(percentage)" class="btn btn-outline-dark" v-for="percentage in percentages">
@@ -89,6 +89,9 @@
 </script>
 
 <style scoped>
+	img.grappe {
+		width: 20px;
+	}
 	.cepages {
 	    padding:2em;
 	}
