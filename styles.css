@@ -1,5 +1,5 @@
 html, body{
-	background-color: grey;
+	background-color: white;
 	height: 100%;
     margin: 0;
     padding: 0;
@@ -12,7 +12,8 @@ div{
 }
 
 p{
-	margin:8%;
+	margin-left:8%;
+	margin-right:8%;	
 	font-family: 'Raleway';
 	text-indent:5%;
 	text-align: justify;
@@ -45,21 +46,9 @@ p{
 	}
 
 	#objet1{
-		background-color: ##F3FDFF;
+		background-color: white;
 		margin:0;
 		padding:0;
-	}
-
-	#objet2{
-		background-color: ##F3FDFF;
-	}
-
-	#objet3{
-		background-color: #FCFED9;
-	}
-
-	#objet4{
-		background-color: #FED9E2;
 	}
 
 	/*RESPONSIVE*/
@@ -86,9 +75,11 @@ p{
 	}
 }
 
-@media all and (max-width: 1024px)
+@media all and (min-width: 1024px max-width: 1024px)
 	{
 	p{
 	font-size: 250%;
 	}
+
+
 
