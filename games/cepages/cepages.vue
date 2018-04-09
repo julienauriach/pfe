@@ -41,23 +41,33 @@
 	        return {
 	        	selectedPercentage: null,
 	        	selectedCepage: null,
-	        	cepages: ['Cabernet Sauvignon', 'Merlot', 'Tougina Nacional'],
-	        	percentages: [10, 20, 40],
+	        	cepages: ['Malbec', 'Petit Verdot', 'Sangiovese', 'Syrah', 'Tougina Nacional'],
+	        	percentages: [30, 50, 90],
 	        	messages: {
-	        		'Cabernet Sauvignon': {
-	        			10: 'pas mal',
-	        			20: 'bof',
-	        			40: 'Affreux, le cabernet sauvignon lorem ipsum dolor sit amet'
+	        		'Malbec': {
+	        			30: 'Des notes animales, de cuir. Généreux en alcool et assez tannique.',
+	        			50: 'Ça peut être très agréable ! On détecte encore plus les parfums cuir et floral.',
+	        			90: 'On s’approche des vins de Cahors, dont le cépage principal est le Malbec.'
 	        		},
-	        		'Merlot': {
-	        			10: 'pas mal',
-	        			20: 'bof',
-	        			40: 'affreux'
+	        		'Petit Verdot': {
+	        			30: 'Un vin structuré, avec les notes mentholées et de garrigues (thym, romarin) du petit verdot.',
+	        			50: 'Un vin costaud. Plus vous montez la proportion du petit verdot, plus vous aurez de notes acides et mentholées. Ce ne sont pas les habitudes de consommation des Français.',
+	        			90: 'Très austère, très dense, avec des notes un peu cuites. Ce ne sont pas les habitudes de consommation des Français.'
+	        		},
+	        		'Sangiovese': {
+	        			30: 'Ça risque d’être intéressant, ce vin ! Les arômes de fruits rouges et d’épices du sangiovese amènent de la douceur.',
+	        			50: 'Plus fruité et plus généreux en alcool. C’est tout à fait buvable, même si on n’a pas d’assemblages de ce genre en France.',
+	        			90: 'Très fruité, avec des arômes de sous-bois (champignon, terre mouillée). On s’approche des vins italiens.'
+	        		},
+	        		'Syrah': {
+	        			30: 'Tout à fait buvable. Mais comme la syrah et le cabernet sauvignon ont tous les deux une structure tannique, votre vin sera donc très puissant.',
+	        			50: 'Un goût austère et très tannique. Vous n’allez pas gagner les faveurs des amateurs.',
+	        			90: 'Un vin très austère. Il ressemblera un peu aux vins des Côtes-du-Rhône-Nord.'
 	        		},
 	        		'Tougina Nacional': {
-	        			10: 'pas mal',
-	        			20: 'bof',
-	        			40: 'affreux'
+	        			30: 'C’est original comme assemblage ! On détecte un registre coloré et fumé.',
+	        			50: 'Plus dense, avec les arômes de fruits rouges et de fleurs du touriga nacional.',
+	        			90: 'Costaud, tannique et fumé. Le côté aromatique du touriga nacional domine l’assemblage.'
 	        		}
 	        	}
 	        }
