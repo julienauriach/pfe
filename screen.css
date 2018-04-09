@@ -11,13 +11,29 @@ div{
 	padding-top:5%;
 }
 
+/* TITRE ARTICLE  */
 h1{
-text-align: justify;
+
+text-align: left;
+margin-top: 3%;
 margin-left:8%;
+font-family: raleway;
 }
-h4{
+
+/* CHAPO  */
+h2{ 
 text-align: justify;
 margin-left:8%;
+}		
+
+/* INTER  */					
+h3{
+
+}
+
+/* EXERGUE  */
+h4{
+
 }
 p{
 	margin-left:8%;
@@ -55,9 +71,6 @@ p{
 #champagneIllustr1{
 	width: 100%;
 }
- #franceBouteille{
-	width: 80%;
-}	
 
 /* Media Queries */
 
