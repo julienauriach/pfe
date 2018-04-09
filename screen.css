@@ -1,102 +1,29 @@
 /* Balises principales  */
 
 html, body {
-  
-  background: #F4DCE6
+  background-color: #F4DCE6;
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 28px;
 }
 
-body{
-	margin-left:0%;
-	margin-right:0%;	
+.video {
+	width: 100%;
 }
 
-h2, h3, h4, h5, p {
-	margin-left:8%;
-	margin-right:8%;	
-	text-align: center;
+article, article.row {
+	max-width: 800px;
+	margin: auto;
 }
-
-.container{
-	padding:0px;
-}
-
 
 /* TITRE ARTICLE  */
-h1{
-	text-align: left;
-	margin-top: 3%;
-	margin-left:3%;
-	font-family: raleway;
-	line-height: 1;
-	font-size: xx-large;
-	font-weight:bold;
-}
 
 /* CHAPO  */
-h2{ 
-	margin-top:2%;
-	margin-right:8%;	
-	font-family: 'Raleway';
-	text-indent:5%;
-	text-align: justify;
-	font-size: 110%;
-	font-style: oblique;
-	font-color: #959595;
-}		
 
 /* INTER  */					
-h3{
-
-}
 
 /* EXERGUE  */
-h4{
 
+p {
+	text-indent: 5%;
 }
-
-p{
-	font-family: 'Raleway';
-	text-indent:5%;
-	text-align: justify;
-	font-size: 100%;
-	margin:0%;
-}
-
-
-
-@media (max-width: @screen-xs) {
-    body{font-size: 10px;}
-}
-
-@media (max-width: @screen-sm) {
-    body{font-size: 25px;}
-}   
-
-
-
-/* Objets  */
-#partieReims{
-	background-color: red;
-}
-
-#partieBordeaux{
-	background-color: red;
-}
-
-#champagneIllustr1{
-	width: 100%;
-	
-}
-
-#champagneIllustr1
-{
-    width: auto;
-}
-
-#franceBouteille{
-	width: 40%;
-}
-  
-
-
-

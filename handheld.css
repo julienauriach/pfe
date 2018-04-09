@@ -1,6 +1,6 @@
 /* Balises principales  */
-font-family: 'Raleway';
-body{
+/*font-family: 'Raleway';*/
+/*body{
 	margin-left:4%;
 	margin-right:4%;	
 }
@@ -28,13 +28,13 @@ p{
 	text-indent:5%;
 	text-align: justify;
 	font-size: 100%;
-}
+}*/
 
 
 
 /* Objets  */
 
-#objet0{
+/*#objet0{
 	background-color: white;
 	margin:0;
 	padding:0;
@@ -44,21 +44,21 @@ p{
 	background-color: white;
 	margin:0;
 	padding:0;
-}
+}*/
 
 /* Images */
 
-#champagneIllustr1{
+/*#champagneIllustr1{
 	width: 100%;
 	align-content: center;
-}
- #franceBouteille{
+}*/
+/* #franceBouteille{
     	width: 80%;
-    }
+    }*/
 
 /* Media Queries */
 
-    #champagneIllustr1
+   /* #champagneIllustr1
     {
         width: auto;
     }
@@ -68,7 +68,7 @@ p{
     }
     p{
 	font-size: 100%;
-	}
+	}*/
 
 
 
