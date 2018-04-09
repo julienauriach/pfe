@@ -1,153 +1,150 @@
 <!DOCTYPE html>
+
+	<!--    ATTENDUS DU DEBUT    -->
+
 <head>
-	<meta charset="utf-8">
- 	<link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap.css">
-	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Work+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="screen.css">
-		<!--
-		font-family: 'Raleway', sans-serif;
-		font-family: 'Oswald', sans-serif;
-		font-family: 'Work Sans', sans-serif; 
-		-->
-
- </head>
-
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap.css">
+   <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Work+Sans" rel="stylesheet">
+   <link rel="stylesheet" href="screen.css">
+   <!--
+      font-family: 'Raleway', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Work Sans', sans-serif; 
+      -->
+   <link rel="stylesheet" href="games/cepages/cepages.css">
+   <script type="text/javascript" src="vendor/vue.min.js"></script>
+   <script type="text/javascript" src="vendor/http-vue-loader.js"></script>
+   <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
 <body>
+   
+   <!--       VIDEO TITRE       -->
 
-<!--        structure de la page           -->
-
-<div class="embed-responsive embed-responsive-16by9" style="padding-left: 0px; padding-right: 0px;">
-	<video id="champagneIllustr1" class="b-lazy" autoplay loop>
-		<source data-src="assets/images/champagneIllustr1.mp4" type="video/mp4">
-	</video>
-</div>
-		
-<h1>Champagne VS réchauffement climatique, quels impacts ? </h1>
+   <div class="embed-responsive embed-responsive-16by9" style="padding-left: 0px; padding-right: 0px;">
+      <video id="champagneIllustr1" class="b-lazy" autoplay loop>
+         <source data-src="assets/images/champagneIllustr1.mp4" type="video/mp4">
+      </video>
+   </div>
 
 
-<h2>En Champagne, les vignerons constatent déjà les premiers signes du réchauffement climatique. </h2>
+   <!--       TITRE ET PARA INTRO      -->
 
-<p>
-La date des vendanges a déjà pratiquement été avancé d’une quinzaine de jours en 20 ans. Une réponse à la hausse d’un degré de la température moyenne observée en été dans la région. Le niveau d’alcool a également augmenté, tandis que l’acidité moyenne du raisin, elle, a baissé. 
-</p>
 
-<!--
-<div class="mx-sm-5">
-	<video class="b-lazy w-100" autoplay loop>
-		<source data-src="assets/images/champagneIllustr1.mp4" type="video/mp4">
-	</video>
-</div>
--->
+	<h1>Champagne VS réchauffement climatique, quels impacts ? </h1>
+   	<h2>En Champagne, les vignerons constatent déjà les premiers signes du réchauffement climatique. </h2>
+   
+   <p>
+      La date des vendanges a déjà pratiquement été avancé d’une quinzaine de jours en 20 ans. Une réponse à la hausse d’un degré de la température moyenne observée en été dans la région. Le niveau d’alcool a également augmenté, tandis que l’acidité moyenne du raisin, elle, a baissé. 
+   </p>
 
-<p>
-La stratégie de la récolte a aussi évolué. “Traditionnellement, il y a 20 ans, tout le monde récoltait tout, explique Thibault Le Mailloux, directeur de la communication au sein du Comité interprofessionnel du vin de Champagne. Mais aujourd’hui, on insiste sur des vendanges à point, c’est-à-dire si le cépage n’est pas mûr, on attend. C’est une approche beaucoup plus pointue.”
-</p>
-<p>
-Les Champenois réfléchissent déjà aux nouvelles variétés de cépages qui sont plus résistantes à la maladies, plus lentes à maturer, au plus fort taux d’acidité. Le tout, dans l’objectif d’anticiper les changements environnementaux et d’adapter les pratiques pour obtenir le même vin avec un climat différent.
-</p>
-<p>
-Cependant, plusieurs études prévoient des hausses de température qui rendraient ces régions trop chaudes pour les raisins traditionnellement cultivés (pinot noir, meunier, chardonnay). Faudra-t-il déplacer les vignes hors de la Champagne, ou remplacer le Champagne par d’autres vins pétillants semblables, comme le sparkling wine anglais ?
-</p>
+    <!--       ENCADRE       -->
+    <h3>
+    	
+    </h3>
 
-<h4>Changer l’aire d’appellation ? </h4>
+    <!--       EXERGUE       -->
+    <h4>
+    	
+    </h4>
 
-<p>
-C’est le cas de Taittinger, la première maison française à se lancer au Royaume-Uni. Elle s’est installée depuis 2015 dans le Kent, dans un ancien verger de pommiers, pour y produire son sparkling wine Domaine Evremond. Terroir calcaire, des coteaux orientés au sud et une élévation d’entre 50 et 100 mètres au-dessus de la mer… La maison envisage d’en produire 300 000 bouteilles haut de gamme dès 2022.
-</p>
-<p>
-Si certains Champenois écartent l’idée des concurrents qui cherchent à remplacer le champagne – “On ne peut pas comparer les terroirs, on n’a pas peur du sparkling anglais ou de sa version italienne, amère”, affirme Thibault Le Mailloux – d’autres n’ont pas tardé à investir à l’étranger. 
-</p>
-<p>
-Le champagne made in Great Britain, ce n’est pas pour demain, confirme Thierry Forest-Marié, directeur de la maison de champagne du même nom, à Trigny : “il y a un changement au niveau de l’aire d’appellation aujourd’hui mais c’est un ajustement, cela n’ira pas au delà.”
-Un raisin plus sucré car récolté plus tard 
-</p>
-<p>
-Grâce au réchauffement climatique, la qualité du Champagne augmente, à court terme. Louis, trentenaire champenois qui a travaillé comme vendangeur pendant sa jeunesse témoigne : “il y a une dizaine d’années, les vignerons ajoutaient très fréquemment du sucre à leur production, une pratique autorisée par le cahier des charges de l’AOP : le dosage.” 
-</p>
-<p>
-Plus un champagne est dosé, moins grande est sa qualité : il sera extra-brut, brut nature, ou brut s’il contient moins de 12 grammes de sucre résiduel par litre; extra-dry ou dry s’il en contient entre 12 et 32; demi-sec ou doux s’il en contient plus de 32. 
 
-</p>
-<p>
-Pour atteindre le goût recherché, le dosage est devenu de moins en moins nécessaire, car la récolte se faisant plus tard, les raisins sont naturellement de plus en plus sucrés. Conséquence : de plus en plus de bouteilles extra-brut, brut nature ou brut écoulées, et donc de plus en plus de bénéfices pour “les maisons de champagne qui n’en parlent pas trop, confirme Louis, car le réchauffement climatique les a bien arrangées ces dernières années.“
-</p>
-			
+    <!--       GRILLE BOOTSRAP VIDEO + TEXTE      -->
 
-	<img src="assets/images/champagneIllustr2.jpg" style="width: 100%">
+	<div class = "container">
+		<div class="col-xs-6">
+			<iframe width="100%" src="https://www.youtube.com/embed/fe9FbWduG50?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-		<div id="objet4">
-			<p>Ah ! nouvelle venue innocente, et rêvant, 
-			Vous avez pris pour naître une heure singulière ; 
-			Vous êtes, Jeanne, avec les terreurs familière ; 
-			Vous souriez devant tout un monde aux abois ; 
-			Vous faites votre bruit d'abeille dans les bois,
-			Ô Jeanne, et vous mêlez votre charmant murmure 
-			Au grand Paris faisant sonner sa grande armure. 
-			Ah ! quand je vous entends, Jeanne, et quand je vous vois 
-			Chanter, et, me parlant avec votre humble voix, 
-			Tendre vos douces mains au-dessus de nos têtes, 
-			Il me semble que l'ombre où grondent les tempêtes 
-			Tremble et s'éloigne avec des rugissements sourds, 
-			Et que Dieu fait donner à la ville aux cent tours
-			Désemparée ainsi qu'un navire qui sombre, 
-			Aux énormes canons gardant le rempart sombre, 
-			A l'univers qui penche et que Paris défend, 
-			Sa bénédiction par un petit enfant.</p>
 		</div>
+		
+		
+		<div class="col-xs-6">
+	      <p>Ah ! nouvelle venue innocente, et rêvant, 
+	         Vous avez pris pour naître une heure singulière ; 
+	         Vous êtes, Jeanne, avec les terreurs familière ; 
+	         Vous souriez devant tout un monde aux abois ; 
+	         Vous faites votre bruit d'abeille dans les bois,
+	         Ô Jeanne, et vous mêlez votre charmant murmure 
+	         Au grand Paris faisant sonner sa grande armure. 
+	         Ah ! quand je vous entends, Jeanne, et quand je vous vois 
+	         Chanter, et, me parlant avec votre humble voix, 
+	         Tendre vos douces mains au-dessus de nos têtes, 
+	         Il me semble que l'ombre où grondent les tempêtes 
+	         Tremble et s'éloigne avec des rugissements sourds, 
+	         Et que Dieu fait donner à la ville aux cent tours
+	         Désemparée ainsi qu'un navire qui sombre, 
+	         Aux énormes canons gardant le rempart sombre, 
+	         A l'univers qui penche et que Paris défend, 
+	         Sa bénédiction par un petit enfant.
+	      </p>
+   		</div>
+	</div>
 
-		<div id="objet5">
-			<p>Vous eûtes donc hier un an, ma bien-aimée. 
-			Contente, vous jasez, comme, sous la ramée, 
-			Au fond du nid plus tiède ouvrant de vagues yeux, 
-			Les oiseaux nouveau-nés gazouillent, tout joyeux 
-			De sentir qu'il commence à leur pousser des plumes. 
-			Jeanne, ta bouche est rose ; et dans les gros volumes 
-			Dont les images font ta joie, et que je dois, 
-			Pour te plaire, laisser chiffonner par tes doigts, 
-			On trouve de beaux vers ; mais pas un qui te vaille 
-			Quand tout ton petit corps en me voyant tressaille ;
-			Les plus fameux auteurs n'ont rien écrit de mieux 
-			Que la pensée éclose à demi dans tes yeux, 
-			Et que ta rêverie obscure, éparse, étrange, 
-			Regardant l'homme avec l'ignorance de l'ange. 
-			Jeanne, Dieu n'est pas loin puisque vous êtes là.</p>
+   </p>
+   <img src="assets/images/champagneIllustr2.jpg" style="width: 100%">
+   
+   <div id="app">
+      <cepages></cepages>
+   </div>
+   <script type="text/javascript" src="games/cepages/index.js"></script>
+   <div>
+   <p>Vous eûtes donc hier un an, ma bien-aimée. 
+      Contente, vous jasez, comme, sous la ramée, 
+      Au fond du nid plus tiède ouvrant de vagues yeux, 
+      Les oiseaux nouveau-nés gazouillent, tout joyeux 
+      De sentir qu'il commence à leur pousser des plumes. 
+      Jeanne, ta bouche est rose ; et dans les gros volumes 
+      Dont les images font ta joie, et que je dois, 
+      Pour te plaire, laisser chiffonner par tes doigts, 
+      On trouve de beaux vers ; mais pas un qui te vaille 
+      Quand tout ton petit corps en me voyant tressaille ;
+      Les plus fameux auteurs n'ont rien écrit de mieux 
+      Que la pensée éclose à demi dans tes yeux, 
+      Et que ta rêverie obscure, éparse, étrange, 
+      Regardant l'homme avec l'ignorance de l'ange. 
+      Jeanne, Dieu n'est pas loin puisque vous êtes là.
+   </p>
+   <p>Ah ! vous avez un an, c'est un âge cela ! 
+      Vous êtes par moments grave, quoique ravie ; 
+      Vous êtes à l'instant céleste de la vie 
+      Où l'homme n'a pas d'ombre, où dans ses bras ouverts, 
+      Quand il tient ses parents, l'enfant tient l'univers ; 
+      Votre jeune âme vit, songe, rit, pleure, espère 
+      D'Alice votre mère à Charles votre père ; 
+      Tout l'horizon que peut contenir votre esprit 
+      Va d'elle qui vous berce à lui qui vous sourit ; 
+      Ces deux êtres pour vous à cette heure première 
+      Sont toute la caresse et toute la lumière ; 
+      Eux deux, eux seuls, ô Jeanne ; et c'est juste ; et je suis, 
+      Et j'existe, humble aïeul, parce que je vous suis ; 
+      Et vous venez, et moi je m'en vais ; et j'adore, 
+      N'ayant droit qu'à la nuit, votre droit à l'aurore. 
+      Votre blond frère George et vous, vous suffisez 
+      A mon âme, et je vois vos jeux, et c'est assez ; 
+      Et je ne veux, après mes épreuves sans nombre, 
+      Qu'un tombeau sur lequel se découpera l'ombre 
+      De vos berceaux dorés par le soleil levant.
+   </p>
 
-			<p>Ah ! vous avez un an, c'est un âge cela ! 
-			Vous êtes par moments grave, quoique ravie ; 
-			Vous êtes à l'instant céleste de la vie 
-			Où l'homme n'a pas d'ombre, où dans ses bras ouverts, 
-			Quand il tient ses parents, l'enfant tient l'univers ; 
-			Votre jeune âme vit, songe, rit, pleure, espère 
-			D'Alice votre mère à Charles votre père ; 
-			Tout l'horizon que peut contenir votre esprit 
-			Va d'elle qui vous berce à lui qui vous sourit ; 
-			Ces deux êtres pour vous à cette heure première 
-			Sont toute la caresse et toute la lumière ; 
-			Eux deux, eux seuls, ô Jeanne ; et c'est juste ; et je suis, 
-			Et j'existe, humble aïeul, parce que je vous suis ; 
-			Et vous venez, et moi je m'en vais ; et j'adore, 
-			N'ayant droit qu'à la nuit, votre droit à l'aurore. 
-			Votre blond frère George et vous, vous suffisez 
-			A mon âme, et je vois vos jeux, et c'est assez ; 
-			Et je ne veux, après mes épreuves sans nombre, 
-			Qu'un tombeau sur lequel se découpera l'ombre 
-			De vos berceaux dorés par le soleil levant.</p>
+<!--  JEU JENNY  -->
+   	<div id="app" style="font-family: 'Raleway', sans-serif;">
+		<cepages></cepages>
+	</div> 
 
 
+<!--        JAVASCRIPT           -->
+   <script type="text/javascript" src="index.js">	</script>
+   <script src="vendor/jquery.min.js">				</script>
+   <script src="vendor/blazy.min.js">				</script>
+   <script type="text/javascript" src="app.js">		</script>
 
-	<!--        javascipt           -->
-	<script src="vendor/jquery.min.js"></script>
-	<script src="vendor/blazy.min.js"></script>
 
-	<!-- should be replaced with minified version when development is finished 
-	<script src="vendor/TweenMax.min.js"></script>
-	<script src="vendor/ScrollMagic.min.js"></script>	
-	<script src="vendor/jquery.scrollmagic.js"></script>
-	<script src="vendor/debug.addIndicators.js"></script>
-	-->
-
-	<script type="text/javascript" src="app.js"></script>
+   <!-- should be replaced with minified version when development is finished 
+      <script src="vendor/TweenMax.min.js"></script>
+      <script src="vendor/ScrollMagic.min.js"></script>	
+      <script src="vendor/jquery.scrollmagic.js"></script>
+      <script src="vendor/debug.addIndicators.js"></script>
+      -->
 
 </body>
-
 </html>
