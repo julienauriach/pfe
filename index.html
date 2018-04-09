@@ -15,27 +15,31 @@
 
 <body>
 
-
 <!--        structure de la page           -->
 
-<object align="center" class="embed-responsive embed-responsive-16by9" style="padding-left: 0px;
-	padding-right: 0px;">
-	<video id=champagneIllustr1 src="assets/images/champagneIllustr1.mp4" autoplay loop>
-	Vidéo 1
+<div class="embed-responsive embed-responsive-16by9" style="padding-left: 0px; padding-right: 0px;">
+	<video id="champagneIllustr1" class="b-lazy" autoplay loop>
+		<source data-src="assets/images/champagneIllustr1.mp4" type="video/mp4">
 	</video>
-</object>
-
-
-
+</div>
 		
 <h1>Champagne VS réchauffement climatique, quels impacts ? </h1>
 
 
-<h3>En Champagne, les vignerons constatent déjà les premiers signes du réchauffement climatique. </h4>
+<h2>En Champagne, les vignerons constatent déjà les premiers signes du réchauffement climatique. </h2>
 
 <p>
 La date des vendanges a déjà pratiquement été avancé d’une quinzaine de jours en 20 ans. Une réponse à la hausse d’un degré de la température moyenne observée en été dans la région. Le niveau d’alcool a également augmenté, tandis que l’acidité moyenne du raisin, elle, a baissé. 
 </p>
+
+<!--
+<div class="mx-sm-5">
+	<video class="b-lazy w-100" autoplay loop>
+		<source data-src="assets/images/champagneIllustr1.mp4" type="video/mp4">
+	</video>
+</div>
+-->
+
 <p>
 La stratégie de la récolte a aussi évolué. “Traditionnellement, il y a 20 ans, tout le monde récoltait tout, explique Thibault Le Mailloux, directeur de la communication au sein du Comité interprofessionnel du vin de Champagne. Mais aujourd’hui, on insiste sur des vendanges à point, c’est-à-dire si le cépage n’est pas mûr, on attend. C’est une approche beaucoup plus pointue.”
 </p>
@@ -68,8 +72,8 @@ Plus un champagne est dosé, moins grande est sa qualité : il sera extra-brut, 
 <p>
 Pour atteindre le goût recherché, le dosage est devenu de moins en moins nécessaire, car la récolte se faisant plus tard, les raisins sont naturellement de plus en plus sucrés. Conséquence : de plus en plus de bouteilles extra-brut, brut nature ou brut écoulées, et donc de plus en plus de bénéfices pour “les maisons de champagne qui n’en parlent pas trop, confirme Louis, car le réchauffement climatique les a bien arrangées ces dernières années.“
 </p>
-				
-</section>
+			
+
 	<img src="assets/images/champagneIllustr2.jpg" style="width: 100%">
 
 		<div id="objet4">
@@ -132,18 +136,17 @@ Pour atteindre le goût recherché, le dosage est devenu de moins en moins néce
 
 
 
-<!--        javascipt           -->
-	
+	<!--        javascipt           -->
 	<script src="vendor/jquery.min.js"></script>
-	<!-- should be replaced with minified version when development is finished -->
+	<script src="vendor/blazy.min.js"></script>
 
+	<!-- should be replaced with minified version when development is finished 
 	<script src="vendor/TweenMax.min.js"></script>
-	<!-- should be replaced with minified version when development is finished -->
-	<script src="vendor/ScrollMagic.min.js"></script>
-	
+	<script src="vendor/ScrollMagic.min.js"></script>	
 	<script src="vendor/jquery.scrollmagic.js"></script>
-	<!-- should be removed when development is finished -->
 	<script src="vendor/debug.addIndicators.js"></script>
+	-->
+
 	<script type="text/javascript" src="app.js"></script>
 
 </body>

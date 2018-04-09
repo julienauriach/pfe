@@ -5,31 +5,38 @@ body{
 	margin-right:0%;	
 }
 
-div{
+div {
 	text-align: center;
 	height: 100%;
 	padding-top:5%;
 }
 
+h2, h3, h4, h5, p {
+	margin-left:8%;
+	margin-right:8%;	
+}
+
+
 /* TITRE ARTICLE  */
 h1{
-
-text-align: left;
-margin-top: 3%;
-margin-left:3%;
-font-family: raleway;
-line-height: 1;
-font-size: xx-large;
+	text-align: left;
+	margin-top: 3%;
+	margin-left:3%;
+	font-family: raleway;
+	line-height: 1;
+	font-size: xx-large;
 }
 
 /* CHAPO  */
 h2{ 
-	margin-left:8%;
+	margin-top:2%;
 	margin-right:8%;	
 	font-family: 'Raleway';
 	text-indent:5%;
 	text-align: justify;
-	font-size: 10%;
+	font-size: 110%;
+	font-style: oblique;
+	font-color: #959595;
 }		
 
 /* INTER  */					
@@ -41,9 +48,8 @@ h3{
 h4{
 
 }
+
 p{
-	margin-left:8%;
-	margin-right:8%;	
 	font-family: 'Raleway';
 	text-indent:5%;
 	text-align: justify;
