@@ -1,8 +1,12 @@
 <template>
     <div class="cepages">
+    	<div class="instructions">
+    	<p>Choisissez un cépage pour remplacer le merlot et la proportion que vous souhaitez. Le reste de l’assemblage sera complété par du cabernet sauvignon.</p>
+		<p> Les cépages de substitution sont le <b>malbec</b> (un cépage cultivé en Argentine et dans le sud de la France), le <b>petit verdot</b> (un ancien cépage bordelais auquel le réchauffement climatique bénéficie), le <b>sangiovese</b> (un cépage italien qui apprécie les forts écarts thermique entre nuit et jour), la <b>syrah</b> (un cépage noir français très utilisé dans le sud du pays), et le <b>touriga nacional</b> (un cépage portugais qui a besoin de chaleur).</p>
+		</div>
     	<ul class="list-unstyled row text-center">
-    		<li class="col-12" v-for="cepage in cepages" v-if="selectedCepage === null || selectedCepage === cepage ">
-    			<button class="btn-primary btn-primary.raised float-left" @click="selectCepage(cepage)">
+    		<li class="col-12 col-sm-4" v-for="cepage in cepages">
+    			<button class="btn-primary raised" @click="selectCepage(cepage)">
     				<img src="../../assets/images/grappe-01.svg" class="grappe"/> {{ cepage }}
     			</button>
     			<div class="btn-group " v-if="selectedCepage === cepage">
@@ -26,8 +30,8 @@
 				<path id="wine" class="st0" d="M270.8,336.2c-28.6,35.5-69.2,55.4-105.6,52.8c-40.6-3.5-79.6-26-107.3-63.2
 					c-27.7-38.1-39-85.7-28.6-130.7C48.4,110.2,61.4,58.3,72.6,25.4h195.6c12.2,32,24.2,82.2,39.8,169.7
 					C316.7,245.3,303.7,297.2,270.8,336.2z" />
-				<mask id="wine_mask" x="0" y="0" width="337" :height="maskHeight" >
-				    <rect x="0" :y="maskY" width="337" :height="maskHeight" style="stroke:none; fill: #fff"/>
+				<mask id="wine_mask" x="0" y="0" width="337">
+				    <rect ref="maskRect" x="0" width="337" style="stroke:none; fill: #fff"/>
 				</mask>
 			</svg>
     	</div>
@@ -41,7 +45,7 @@
 	        return {
 	        	selectedPercentage: null,
 	        	selectedCepage: null,
-	        	cepages: ['Malbec', 'Petit Verdot', 'Sangiovese', 'Syrah', 'Tougina Nacional'],
+	        	cepages: ['Malbec', 'Petit Verdot', 'Sangiovese', 'Syrah', 'Touriga Nacional'],
 	        	percentages: [30, 50, 90],
 	        	messages: {
 	        		'Malbec': {
@@ -51,20 +55,20 @@
 	        		},
 	        		'Petit Verdot': {
 	        			30: 'Un vin structuré, avec les notes mentholées et de garrigues (thym, romarin) du petit verdot.',
-	        			50: 'Un vin costaud. Plus vous montez la proportion du petit verdot, plus vous aurez de notes acides et mentholées. Ce ne sont pas les habitudes de consommation des Français.',
-	        			90: 'Très austère, très dense, avec des notes un peu cuites. Ce ne sont pas les habitudes de consommation des Français.'
+	        			50: 'Un vin costaud. Encore plus de notes acides et mentholées.',
+	        			90: 'Très austère, très dense, avec des notes un peu cuites.'
 	        		},
 	        		'Sangiovese': {
 	        			30: 'Ça risque d’être intéressant, ce vin ! Les arômes de fruits rouges et d’épices du sangiovese amènent de la douceur.',
-	        			50: 'Plus fruité et plus généreux en alcool. C’est tout à fait buvable, même si on n’a pas d’assemblages de ce genre en France.',
+	        			50: 'Plus fruité et plus généreux en alcool. Tout à fait buvable, même si on n’a pas d’assemblages de ce genre en France.',
 	        			90: 'Très fruité, avec des arômes de sous-bois (champignon, terre mouillée). On s’approche des vins italiens.'
 	        		},
 	        		'Syrah': {
-	        			30: 'Tout à fait buvable. Mais comme la syrah et le cabernet sauvignon ont tous les deux une structure tannique, votre vin sera donc très puissant.',
+	        			30: 'Tout à fait buvable. Mais comme les deux cépages sont tanniques, votre vin sera donc très puissant.',
 	        			50: 'Un goût austère et très tannique. Vous n’allez pas gagner les faveurs des amateurs.',
 	        			90: 'Un vin très austère. Il ressemblera un peu aux vins des Côtes-du-Rhône-Nord.'
 	        		},
-	        		'Tougina Nacional': {
+	        		'Touriga Nacional': {
 	        			30: 'C’est original comme assemblage ! On détecte un registre coloré et fumé.',
 	        			50: 'Plus dense, avec les arômes de fruits rouges et de fleurs du touriga nacional.',
 	        			90: 'Costaud, tannique et fumé. Le côté aromatique du touriga nacional domine l’assemblage.'
@@ -74,7 +78,7 @@
 	    },
 	    methods: {
 	    	selectCepage: function(cepage) {
-	    		this.selectedCepage = this.selectedCepage === null ? cepage : null;
+	    		this.selectedCepage = cepage;
 	    		this.selectedPercentage = null
 	    	},
 	    	selectPercentage: function(percentage) {
@@ -94,11 +98,29 @@
 	    		} 
 	    		return null
 	    	}
+	    },
+	    watch: {
+	    	selectedPercentage () {
+	    		var t = d3.transition().duration(1000).delay(0)
+
+	    		d3.select(this.$refs.maskRect)
+	    			.attr('y', 389)
+	    			.attr('height', 0)
+	    			.transition(t)
+	    			.attr('y', this.maskY)
+	    			.attr('height', this.maskHeight)
+	    	}
 	    }
 	}
 </script>
 
 <style scoped>
+	.instructions {
+    max-width: 800px;
+    position: relative;
+    padding: 8px 30px;
+	}
+
 	img.grappe {
 		width: 20px;
 	}
@@ -106,16 +128,12 @@
 	    padding:2em;
 	}
 
-	.btn-primary {
+	.btn-primary.raised {
     border-radius: 8px;
     padding: 8px 12px;
-    margin: 2px;
-    color: #ffffff;
-    background: #CA80B8;
-	}
-
-	.btn-primary.raised {
-	box-shadow: 0 20px 0 0 #007299;
+    margin: 4px;
+    color: black;
+    background: #FFFFFF;
 	}
 
 	.btn-primary.raised:active, .btn-primary.raised.active {
@@ -138,14 +156,12 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		font-size: 1.5em;
-		font-weight:bold;
+		font-size: 1.3em;
 		display: block;
-		padding: 0.5em;
+		padding: 0.3em;
 		text-align: center;
-		line-height: 1.1;
-		background: rgba(0, 0, 0, 0.2);
-		border-radius: 0.5em;
+		line-height: 1.2;
+		border-radius: 0.4em;
 	}
 
 	.glass svg {
@@ -154,7 +170,11 @@
 	}	
 
 	.glass svg #wine {
-		fill: #D62B3F;
+		fill: #983257;
 		mask: url('#wine_mask');
+	}
+
+	#wine_mask rect {
+		transition: height 1s linear;
 	}
 </style>

@@ -1,6 +1,10 @@
 
 //         ARCHIVES
 
+;(function() {
+    // Initialize lazy loader
+    var bLazy = new Blazy();
+})();
 // var controllerObjet1 = new ScrollMagic.Controller({
 //     container: '#objet1',
 // });
@@ -18,8 +22,6 @@
 
 // var controller = new ScrollMagic.Controller();
 // 
-		create a scene
-		// 
 // 
 // 
 	// new ScrollMagic.Scene({
