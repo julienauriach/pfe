@@ -1,8 +1,8 @@
 <template>
     <div class="cepages">
     	<div class="instructions">
-    	<p>Choisissez un cépage pour remplacer le merlot et la proportion que vous souhaitez. Le reste de l’assemblage sera complété par du cabernet sauvignon.</p>
-		<p> Les cépages de substitution sont le <b>malbec</b> (un cépage cultivé en Argentine et dans le sud de la France), le <b>petit verdot</b> (un ancien cépage bordelais auquel le réchauffement climatique bénéficie), le <b>sangiovese</b> (un cépage italien qui apprécie les forts écarts thermique entre nuit et jour), la <b>syrah</b> (un cépage noir français très utilisé dans le sud du pays), et le <b>touriga nacional</b> (un cépage portugais qui a besoin de chaleur).</p>
+		<p> Plusieurs cépages comme le <b>malbec</b> (France et Argentine), le <b>petit verdot</b> (France), le <b>sangiovese</b> (Italie), la <b>syrah</b> (France) ou encore le <b>touriga nacional</b> (Portugal), souvent plus résistants à la chaleur, pourraient remplacer le merlot. </p>
+		<p>À vous donc de créer un nouvel assemblage ! Choisissez un cépage et la proportion que vous souhaitez. Le reste de l’assemblage sera complété par du cabernet sauvignon. À quoi ressemblerait votre vin ?</p>
 		</div>
     	<ul class="list-unstyled row text-center">
     		<li class="col-12 col-sm-4" v-for="cepage in cepages">
@@ -160,6 +160,7 @@
 		display: block;
 		padding: 0.3em;
 		text-align: center;
+		font-weight: bold;
 		line-height: 1.2;
 		border-radius: 0.4em;
 	}
@@ -170,7 +171,7 @@
 	}	
 
 	.glass svg #wine {
-		fill: #983257;
+		fill: #B86784;
 		mask: url('#wine_mask');
 	}
 
