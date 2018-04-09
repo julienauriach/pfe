@@ -1,5 +1,7 @@
 <template>
     <div class="cepages">
+    	
+    	<h1>TITRE !!!!</h1>
     	<div class="instructions">
 		<p> Plusieurs cépages comme le <b>malbec</b> (France et Argentine), le <b>petit verdot</b> (France), le <b>sangiovese</b> (Italie), la <b>syrah</b> (France) ou encore le <b>touriga nacional</b> (Portugal), souvent plus résistants à la chaleur, pourraient remplacer le merlot. </p>
 		<p>À vous donc de créer un nouvel assemblage ! Choisissez un cépage et la proportion que vous souhaitez. Le reste de l’assemblage sera complété par du cabernet sauvignon. À quoi ressemblerait votre vin ?</p>

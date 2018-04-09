@@ -12,6 +12,12 @@ article, article.row {
 	margin: auto;
 }
 
+img{
+	margin-bottom:15px; 
+	margin-top:5px;
+}
+
+
 p {
 	text-indent: 5%;
 }
@@ -45,12 +51,14 @@ p {
 {
 }
 
-/* TITRE ARTICLE  */
+/* 	------           frfer.        ---------   */
 
-/*   ----------      CHAPO         ---------   */
 .lead{
 	font-family: 'Oswald';
 }
+
+/*   ----------      CHAPO         ---------   */
+
 /* INTER  */					
 
 /* EXERGUE  */
