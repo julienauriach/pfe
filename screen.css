@@ -16,10 +16,19 @@ article, article.row {
 	margin: auto;
 }
 
+.encart {
+	background-color: white;
+	box-shadow: 10px 5px 23px 0px grey;
+	border-radius : 15px;
+	margin-bottom: 19px;
+}
+
 /* TITRE ARTICLE  */
 
 /* CHAPO  */
-
+.lead{
+	font-family: 'Oswald';
+}
 /* INTER  */					
 
 /* EXERGUE  */
