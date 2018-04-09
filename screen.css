@@ -5,15 +5,10 @@ body{
 	margin-right:0%;	
 }
 
-div {
-	text-align: center;
-	height: 100%;
-	padding-top:5%;
-}
-
 h2, h3, h4, h5, p {
 	margin-left:8%;
 	margin-right:8%;	
+	text-align: center;
 }
 
 
@@ -25,6 +20,7 @@ h1{
 	font-family: raleway;
 	line-height: 1;
 	font-size: xx-large;
+	font-weight:bold;
 }
 
 /* CHAPO  */
