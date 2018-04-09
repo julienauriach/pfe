@@ -1,8 +1,8 @@
 /* Balises principales  */
 
 body{
-	margin-left:4%;
-	margin-right:4%;	
+	margin-left:0%;
+	margin-right:0%;	
 }
 
 div{
@@ -16,7 +16,7 @@ h1{
 
 text-align: left;
 margin-top: 3%;
-margin-left:8%;
+margin-left:3%;
 font-family: raleway;
 }
 
@@ -24,6 +24,7 @@ font-family: raleway;
 h2{ 
 text-align: justify;
 margin-left:8%;
+margin-right:0%;	
 }		
 
 /* INTER  */					
@@ -52,27 +53,21 @@ p{
     body{font-size: 25px;}
 }   
 
+
+
 /* Objets  */
-
-#objet0{
-	background-color: white;
-	margin:0;
-	padding:0;
+#partieReims{
+	background-color: red;
 }
 
-#objet1{
-	background-color: white;
-	margin:0;
-	padding:0;
+#partieBordeaux{
+	background-color: red;
 }
-
-/* Images */
 
 #champagneIllustr1{
 	width: 100%;
+	
 }
-
-/* Media Queries */
 
 #champagneIllustr1
 {
