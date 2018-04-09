@@ -18,13 +18,18 @@ text-align: left;
 margin-top: 3%;
 margin-left:3%;
 font-family: raleway;
+line-height: 1;
+font-size: xx-large;
 }
 
 /* CHAPO  */
 h2{ 
-text-align: justify;
-margin-left:8%;
-margin-right:0%;	
+	margin-left:8%;
+	margin-right:8%;	
+	font-family: 'Raleway';
+	text-indent:5%;
+	text-align: justify;
+	font-size: 10%;
 }		
 
 /* INTER  */					
