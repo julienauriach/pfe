@@ -7,13 +7,17 @@ html, body {
   line-height: 28px;
 }
 
-.video {
-	width: 100%;
-}
-
 article, article.row {
 	max-width: 800px;
 	margin: auto;
+}
+
+p {
+	text-indent: 5%;
+}
+
+.video {
+	width: 100%;
 }
 
 .encart {
@@ -23,9 +27,27 @@ article, article.row {
 	margin-bottom: 19px;
 }
 
+/*   ----------      JEU JENNY          ---------   */
+
+.instructions {
+	background-color: grey;
+	box-shadow: 10px 5px 3px 0px black;
+	border-radius : 10px;
+	margin-bottom: 20px;
+
+}
+.cepages{
+}
+
+#glass{
+}
+#listeCepages
+{
+}
+
 /* TITRE ARTICLE  */
 
-/* CHAPO  */
+/*   ----------      CHAPO         ---------   */
 .lead{
 	font-family: 'Oswald';
 }
@@ -33,6 +55,4 @@ article, article.row {
 
 /* EXERGUE  */
 
-p {
-	text-indent: 5%;
-}
+

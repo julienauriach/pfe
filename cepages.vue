@@ -25,7 +25,7 @@
     			<p>{{ message }}</p>
     		</div>
     	</div>
-    	<ul class="list-unstyled row text-center">
+    	<ul class="list-unstyled row text-center" id="listeCepages">
     		<li class="col-12 col-sm-4" v-for="cepage in cepages">
     			<button class="btn-primary raised btn-block" @click="selectCepage(cepage)">
     				<img src="./assets/images/grappe-01.svg" class="grappe"/> {{ cepage }}
