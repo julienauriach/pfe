@@ -1,6 +1,6 @@
 
 new Vue({
-	el: '.app',
+	el: '#app',
 	components: {
 		'cepages': httpVueLoader('./cepages.vue')
 	}
