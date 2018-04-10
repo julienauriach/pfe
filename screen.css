@@ -31,7 +31,7 @@ p {
 	text-indent: 5%;
 }
 
-.container-fluid mt-3 {
+.container-fluid {
 	margin-bottom:0px; 
 	margin-top:0px;
 }
@@ -45,6 +45,25 @@ p {
 	box-shadow: 10px 5px 23px 0px grey;
 	border-radius : 15px;
 	margin-bottom: 19px;
+}
+
+.exergue{
+
+   width: 100%;
+   padding: 3%;
+   padding-right: 9%;
+   padding-left: 9%;
+   line-height: 1.1em;
+
+  /* color: #444444;
+   background-color: white;
+   background-image: linear-gradient(#FCFCFB, #E8E8E7);*/
+/*   box-shadow: -1px 2px 10px 6px #F8F2E6 inset;*/
+  /* border-radius : 15px;*/
+   font-family: 'Cormorant';
+   font-size: 2em;
+   text-align: center;
+
 }
 
 /*   ----------      JEU JENNY          ---------   */
@@ -65,13 +84,18 @@ p {
 {
 }
 
-/* 	------           frfer.        ---------   */
+/* 	------          1er chapo        ---------   */
 
-.lead{
+
+p.leadTop{
 	font-family: 'Oswald';
 }
 
 /*   ----------      CHAPO         ---------   */
+
+p.leadPerso{
+	font-family: 'Work Sans';
+}
 
 /* INTER  */					
 
