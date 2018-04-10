@@ -1,12 +1,11 @@
 <template>
-    <div class="cepages">
+    <div class="cepages" style="padding-top:10px; padding-left:0px; padding-right:0px;">
     	
-    	<h1>TITRE !!!!</h1>
     	<div class="instructions">
 		<p> Plusieurs cépages comme le <b>malbec</b> (France et Argentine), le <b>petit verdot</b> (France), le <b>sangiovese</b> (Italie), la <b>syrah</b> (France) ou encore le <b>touriga nacional</b> (Portugal), souvent plus résistants à la chaleur, pourraient remplacer le merlot. </p>
 		<p>À vous donc de créer un nouvel assemblage ! Choisissez un cépage et la proportion que vous souhaitez. Le reste de l’assemblage sera complété par du cabernet sauvignon. À quoi ressemblerait votre vin ?</p>
 		</div>
-    	<div class="glass row">
+    	<div class="glass row" style="padding-left:15px; padding-right:15px;">
     		<div class="col-4 text-center">
     			<svg viewBox="0 0 337 518">
 					<path id="glass" d="M333.8,190.8C316.5,94.9,303.5,42.2,289.7,8.6L287.1,0H55.6l-3.5,8.6C38.3,42.3,26.2,94.1,4.6,190
@@ -27,7 +26,7 @@
     			<p>{{ message }}</p>
     		</div>
     	</div>
-    	<ul class="list-unstyled row text-center" id="listeCepages">
+    	<ul class="list-unstyled row text-center" id="listeCepages" style="padding-left:15px; padding-right:15px;">
     		<li class="col-12 col-sm-4" v-for="cepage in cepages">
     			<button class="btn-primary raised btn-block" @click="selectCepage(cepage)">
     				<img src="./assets/images/grappe-01.svg" class="grappe"/> {{ cepage }}

@@ -41,10 +41,11 @@ p {
 }
 
 .encart {
-	background-color: white;
+	background-color: #f5f5f5;
 	box-shadow: 10px 5px 23px 0px grey;
 	border-radius : 15px;
 	margin-bottom: 19px;
+
 }
 
 .exergue{
@@ -69,18 +70,17 @@ p {
 /*   ----------      JEU JENNY          ---------   */
 
 .instructions {
-	background-color: grey;
-	box-shadow: 10px 5px 3px 0px black;
-	border-radius : 10px;
+	margin: 0.02em;
+  	margin-right: 0.02em;
+   	margin-left: 0.02em;
 	margin-bottom: 20px;
 
 }
+article#cepages.row.encart{
+	padding-bottom: 0px;
+	margin-bottom: 30px;
+	margin-top: 2em;
 
-
-#glass{
-}
-#listeCepages
-{
 }
 
 /* 	------          1er chapo        ---------   */
@@ -95,6 +95,7 @@ p.leadTop{
 p.leadPerso{
 	font-family: 'Work Sans';
 	font-weight: bold;
+
 }
 
 /* INTER  */					
