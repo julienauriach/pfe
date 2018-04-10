@@ -75,8 +75,7 @@ p {
 	margin-bottom: 20px;
 
 }
-.cepages{
-}
+
 
 #glass{
 }
@@ -95,6 +94,7 @@ p.leadTop{
 
 p.leadPerso{
 	font-family: 'Work Sans';
+	font-weight: bold;
 }
 
 /* INTER  */					
