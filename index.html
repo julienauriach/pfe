@@ -1,211 +1,213 @@
 <!DOCTYPE html>
 
-	<!--    ATTENDUS DU DEBUT    -->
+<!--    ATTENDUS DU DEBUT    -->
 
 <head>
-   <meta charset="utf-8">
-   <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap.css">
-   <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Work+Sans" rel="stylesheet">
-   <link rel="stylesheet" href="screen.css">
-   <!--
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="screen.css">
+    <!--
       font-family: 'Raleway', sans-serif;
       font-family: 'Oswald', sans-serif;
       font-family: 'Work Sans', sans-serif; 
       -->
-   <link rel="stylesheet" href="games/cepages/cepages.css">
-   <script type="text/javascript" src="vendor/vue.min.js"></script>
-   <script type="text/javascript" src="vendor/http-vue-loader.js"></script>
-   <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="games/cepages/cepages.css">
+    <script type="text/javascript" src="vendor/vue.min.js"></script>
+    <script type="text/javascript" src="vendor/http-vue-loader.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
+
 <body>
-   
-   <!--       VIDEO TITRE       -->
 
-  <video class="b-lazy video" autoplay loop>
-     <source data-src="assets/images/champagneIllustr1.mp4" type="video/mp4">
-  </video>
+    <!--       VIDEO TITRE       -->
 
+    <video class="b-lazy video" autoplay loop>
+        <source data-src="assets/images/champagneIllustr1.mp4" type="video/mp4">
+    </video>
 
-   <!--       TITRE ET PARA INTRO      -->
+    <!--       PARA INTRO      -->
 
-<div class="container-fluid mt-3" style="background-color: #FFF5F6;">
-	<article>
+    <div class="container-fluid mt-3" style="background-color: #FEFAEA;"">
+        <article>
 
-	   	<p class="lead"> On sait du réchauffement climatique qu’il fait fondre la banquise. On sait moins qu’il compromet quelques-unes de nos plus grandes bouteilles de vin. Dans un pays où l’on savoure le vin autant que l’on aime le fromage, cette sombre prophétie sur l’avenir des vignobles inquiète. Car durant les prochaines décennies, les spécialistes du Groupe d'experts intergouvernemental sur l'évolution du climat s’accordent à dire que la température moyenne continuera de grimper, entre 1 et 6 degrés selon les scénarios. Déjà, entre les rangs de vignes, les exploitants remarquent le changement : vins moins frais, plus sucrés, plus alcoolisés. A terme, c’est la structure et le goût des vins français qui pourraient être remis en cause. Alors sur le terrain, la profession s’organise. Dans les différentes régions viticoles de France, les vignerons cherchent et trouvent des solutions pour contrer les effets du climat. Rencontre au fil du scroll avec des professionnels qui entendent bien résister, encore et toujours, à l’évolution des temps. </p>
-	
+    		<p class="leadTop"> On sait du réchauffement climatique qu’il fait fondre la banquise. On sait moins qu’il compromet quelques-unes de nos plus grandes bouteilles de vin. Dans un pays où l’on savoure le vin autant que l’on aime le fromage, cette sombre prophétie sur l’avenir des vignobles inquiète. Car durant les prochaines décennies, les spécialistes du Groupe d'experts intergouvernemental sur l'évolution du climat s’accordent à dire que la température moyenne continuera de grimper, entre 1 et 6 degrés selon les scénarios. Déjà, entre les rangs de vignes, les exploitants remarquent le changement : vins moins frais, plus sucrés, plus alcoolisés. A terme, c’est la structure et le goût des vins français qui pourraient être remis en cause. Alors sur le terrain, la profession s’organise. Dans les différentes régions viticoles de France, les vignerons cherchent et trouvent des solutions pour contrer les effets du climat. Rencontre au fil du scroll avec des professionnels qui entendent bien résister, encore et toujours, à l’évolution des temps. </p>
 
+    	</article>
+    </div>
 
-<!-- INTRODUCTION POTENTIELLEMENT stylisée-->
+    <!--       I BORDEAUX     -->
 
 
-<!-- CHAPITRE 1 MERLOT-->
+    <div class="container-fluid mt-3" style="background-color: #FFF5F6; margin-bottom:0px; margin-top:0px;">
 
-</article>
-	<div class="row">
-		<img src="assets/images/illustrBordeaux.jpg" class="img-fluid">
-	</div>
-<article>
+        <div class="row" style="margin-bottom: 0px; margin-top: 0px;">
+            <img src="assets/images/illustrBordeaux.jpg" class="img-responsive">
+        </div>
 
-	<p class="lead"> Les vins de Bordeaux sont parmi les plus connus au monde. Ils reposent sur des assemblages complexes de différentes variétés de raisin spécifiques à la région. Principal cépage contenu dans les flacons aquitains, le merlot est considéré comme menacé par le changement climatique. Au point que sur le terrain, on envisage déjà de changer de cépage.</h2>
+        <article>
 
-  	<!--  JEU JENNY  -->
-   <article id="cepages" class="row encart">
-      <cepages></cepages>
-   </article>
+            <p class="lead"> Les vins de Bordeaux sont parmi les plus connus au monde. Ils reposent sur des assemblages complexes de différentes variétés de raisin spécifiques à la région. Principal cépage contenu dans les flacons aquitains, le merlot est considéré comme menacé par le changement climatique. Au point que sur le terrain, on envisage déjà de changer de cépage.</h2>
 
-   <script type="text/javascript" src="games/cepages/index.js"></script>
+                <!--  JEU JENNY  -->
+                <article id="cepages" class="row encart">
+                    <cepages></cepages>
+                </article>
 
+                <script type="text/javascript" src="games/cepages/index.js"></script>
 
-	<p>“Le changement climatique, j’ai pas eu besoin que le GIEC nous ponde quelque chose pour voir qu’il était là.” Assis à la table de son salon, Dominique Techer déroule avec pessimisme sa vision du futur. C’est à partir du début des années 2000 que le vigneron a pris conscience de l’évolution du climat. “J’avais perdu mon ciré, relate l’homme habitué aux pluies qui s’abattent sur Pomerol. Pourquoi ? Parce que je ne m’en servais plus.” L’exploitant détaille les bouleversements : des périodes de pluie intense suivies de sécheresse au lieu de petites averses régulières, une diminution de la pluviométrie, une augmentation des températures moyennes. Et les prévisions des experts ne prévoient pas de stabilisation pour les décennies à venir, mais une évolution qui devrait se poursuivre dans ce sens. “Pour moi, on est déjà dans un processus quasiment hors de contrôle” juge sombrement Dominique Techer. </p>
+                <p>“Le changement climatique, j’ai pas eu besoin que le GIEC nous ponde quelque chose pour voir qu’il était là.” Assis à la table de son salon, Dominique Techer déroule avec pessimisme sa vision du futur. C’est à partir du début des années 2000 que le vigneron a pris conscience de l’évolution du climat. “J’avais perdu mon ciré, relate l’homme habitué aux pluies qui s’abattent sur Pomerol. Pourquoi ? Parce que je ne m’en servais plus.” L’exploitant détaille les bouleversements : des périodes de pluie intense suivies de sécheresse au lieu de petites averses régulières, une diminution de la pluviométrie, une augmentation des températures moyennes. Et les prévisions des experts ne prévoient pas de stabilisation pour les décennies à venir, mais une évolution qui devrait se poursuivre dans ce sens. “Pour moi, on est déjà dans un processus quasiment hors de contrôle” juge sombrement Dominique Techer. </p>
 
-	<p class="exergue">
-		“Pour moi, on est déjà dans un processus quasiment hors de contrôle”
-	</p>
+                <p class="exergue">
+                    “Pour moi, on est déjà dans un processus quasiment hors de contrôle”
+                </p>
 
-	<p>Il y a de quoi être pessimiste. Car ce pays de vin dépend de l’une des plantes les plus sensibles à l’évolution climatique : la vigne. Les vignerons ont d’ailleurs repéré depuis longtemps les signaux de l’évolution des temps. Vendanges plus précoces, augmentation du degré d’alcool, atténuation du sentiment de fraîcheur du vin. Toutes les variétés de raisin sont concernées. Mais l’une d’entre elles concentre les inquiétudes : le merlot. Un cépage qui représente à lui seul 60% de la production bordelaise. Un cépage “précoce”, dont la maturité intervient de plus en plus tôt du fait du réchauffement climatique. Les baies maturent désormais au coeur de l’été, et se gorgent de sucre très rapidement, sans laisser aux arômes le temps de se développer. A l’arrivée, les vins issus de ces raisins manquent de structure, d’arômes, et affichent un degré d’alcool plus élevé. La filière s’interroge. Faudra-t-il abandonner le merlot ? Faudra-t-il introduire de nouveaux cépages mieux adaptés aux nouvelles conditions climatiques ? Sur le terrain, certains ont déjà sauté le pas. </p>
+                <p>Il y a de quoi être pessimiste. Car ce pays de vin dépend de l’une des plantes les plus sensibles à l’évolution climatique : la vigne. Les vignerons ont d’ailleurs repéré depuis longtemps les signaux de l’évolution des temps. Vendanges plus précoces, augmentation du degré d’alcool, atténuation du sentiment de fraîcheur du vin. Toutes les variétés de raisin sont concernées. Mais l’une d’entre elles concentre les inquiétudes : le merlot. Un cépage qui représente à lui seul 60% de la production bordelaise. Un cépage “précoce”, dont la maturité intervient de plus en plus tôt du fait du réchauffement climatique. Les baies maturent désormais au coeur de l’été, et se gorgent de sucre très rapidement, sans laisser aux arômes le temps de se développer. A l’arrivée, les vins issus de ces raisins manquent de structure, d’arômes, et affichent un degré d’alcool plus élevé. La filière s’interroge. Faudra-t-il abandonner le merlot ? Faudra-t-il introduire de nouveaux cépages mieux adaptés aux nouvelles conditions climatiques ? Sur le terrain, certains ont déjà sauté le pas. </p>
 
-<!-- VIDEO Eric Perrin -->
+                <!--     ______  VIDEO Eric Perrin      ______    -->
 
-	<p> Au Château Haut-Vigneau, qui produit des vins sur l’appellation Pessac-Léognan, ce ne sont pas les vins rouges qui évoluent, mais les blancs. “Nous avons 7 hectares de terrains non classés dans l’AOC, mais que nous considérons comme étant de bons terroirs” explique Karine Laroche-Barré, responsable d’exploitation. Libérés des contraintes de cépages qui pèsent sur les terres classées, les vignerons ont choisi pour leurs nouvelles vignes de “conduire une réflexion plus poussée vers les cépages du Sud, pour répondre aux enjeux du réchauffement climatique.” Deux variétés ont finalement été retenues : le viognier et le vermentino. Deux cépages utilisés sous d’autres latitudes, dans le Midi pour le premier, en Corse et en Provence pour le second. Mais qu’en est-il des terres en AOC ? Pour l’heure, le vin du domaine est produit à partir d’un assemblage de cabernet et de merlot. “Si le réchauffement climatique s’aggrave ? On changera de cépage, rit Eric Perrin. Une hypothèse encore lointaine dans l’esprit du propriétaire du château, qui s’en amuse volontiers. </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ruTF_FovPkA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-	<h3> Un retour des cépages anciens </h3>
+                <p> Au Château Haut-Vigneau, qui produit des vins sur l’appellation Pessac-Léognan, ce ne sont pas les vins rouges qui évoluent, mais les blancs. “Nous avons 7 hectares de terrains non classés dans l’AOC, mais que nous considérons comme étant de bons terroirs” explique Karine Laroche-Barré, responsable d’exploitation. Libérés des contraintes de cépages qui pèsent sur les terres classées, les vignerons ont choisi pour leurs nouvelles vignes de “conduire une réflexion plus poussée vers les cépages du Sud, pour répondre aux enjeux du réchauffement climatique.” Deux variétés ont finalement été retenues : le viognier et le vermentino. Deux cépages utilisés sous d’autres latitudes, dans le Midi pour le premier, en Corse et en Provence pour le second. Mais qu’en est-il des terres en AOC ? Pour l’heure, le vin du domaine est produit à partir d’un assemblage de cabernet et de merlot. “Si le réchauffement climatique s’aggrave ? On changera de cépage, rit Eric Perrin. Une hypothèse encore lointaine dans l’esprit du propriétaire du château, qui s’en amuse volontiers. </p>
 
-	<p>Car si les difficultés de culture du merlot sont présentes à l’esprit de bien des viticulteurs, son remplacement reste une solution que tous cherchent à éviter. Une question financière d’abord, car replanter des vignes coûte cher et représente un pari sur le long terme. Une crainte pour la typicité des vins, ensuite. Le vin de Bordeaux est reconnu sur les marchés par des caractéristiques qui lui sont propres, et qu’il convient de ne pas chambouler. La majorité des bouteilles bordelaises sont issues d’un assemblage de plusieurs cépages. Cabernet franc et cabernet sauvignon partagent la vedette avec le merlot. “Il y a quinze ans, pour avoir de la qualité sur nos cabernets francs, il fallait vraiment travailler, se souvient Dominique Techer. Aujourd’hui, c’est ‘peace and love’, tout est bon.” Dans les assemblages, la part de ces cabernets qui connaissent une meilleure maturité rogne petit à petit sur celle du merlot. 	Mais dans le cahier des charges de l’appellation, on trouve aussi trois autres cépages “anciens”, que certains qualifient volontiers d’oubliés. </p>
+                <h3> Un retour des cépages anciens </h3>
 
-<p class="exergue">
-		“Le malbec, c’était pas terrible. Maintenant, on en tire des cuvées magnifiques !”
-	</p>
+                <p>Car si les difficultés de culture du merlot sont présentes à l’esprit de bien des viticulteurs, son remplacement reste une solution que tous cherchent à éviter. Une question financière d’abord, car replanter des vignes coûte cher et représente un pari sur le long terme. Une crainte pour la typicité des vins, ensuite. Le vin de Bordeaux est reconnu sur les marchés par des caractéristiques qui lui sont propres, et qu’il convient de ne pas chambouler. La majorité des bouteilles bordelaises sont issues d’un assemblage de plusieurs cépages. Cabernet franc et cabernet sauvignon partagent la vedette avec le merlot. “Il y a quinze ans, pour avoir de la qualité sur nos cabernets francs, il fallait vraiment travailler, se souvient Dominique Techer. Aujourd’hui, c’est ‘peace and love’, tout est bon.” Dans les assemblages, la part de ces cabernets qui connaissent une meilleure maturité rogne petit à petit sur celle du merlot. Mais dans le cahier des charges de l’appellation, on trouve aussi trois autres cépages “anciens”, que certains qualifient volontiers d’oubliés. </p>
 
-Petit Verdot, Malbec, Carménère : autant de noms qui ont disparu de la plupart des étiquettes, mais qui pourraient dans les années à venir se refaire une place au soleil. Naguère peu productifs ou difficiles à faire mûrir, ces cépages sont désormais plus accessibles. “Sur les parcelles de merlot réimplantées récemment, j’ai remis du merlot sur certaines, détaille Dominique Techer. Mais sur d’autres, j’ai plutôt mis du cabernet et du malbec.” Une évolution pour le vigneron de Pomerol qui a connu bien des déboires avec ce cépage complexe. “Le malbec, c’était pas terrible. Ca nous est arrivé de laisser les grappes par terre, alors que maintenant on en tire des cuvées magnifiques !” Autre avantage : la teneur en sucre des baies de malbec est plus faible, ce qui permet d’offrir aux consommateurs des vins au degré d’alcool contenu. </p>
+                <p class="exergue">
+                    “Le malbec, c’était pas terrible. Maintenant, on en tire des cuvées magnifiques !”
+                </p>
 
-	<p>D’autres voient plus loin encore. Car à long-terme, les ajustements d’assemblage pourraient ne plus suffire, et le remplacement du merlot deviendrait alors inévitable. “Notre rôle, c’est de permettre le maintien d’une viticulture de qualité” explique Agnès Destrac-Irvine. Cette ingénieure de l’INRA (Institut national de la recherche agronomique) coordonne un projet nommé “Vitadapt” qui vise à identifier les candidats les plus sérieux pour remplacer le merlot s’il venait à faire défaut. “Le merlot présente un risque dans un futur proche” avertit la scientifique, qui cite l’horizon 2050.</p>
+                Petit Verdot, Malbec, Carménère : autant de noms qui ont disparu de la plupart des étiquettes, mais qui pourraient dans les années à venir se refaire une place au soleil. Naguère peu productifs ou difficiles à faire mûrir, ces cépages sont désormais plus accessibles. “Sur les parcelles de merlot réimplantées récemment, j’ai remis du merlot sur certaines, détaille Dominique Techer. Mais sur d’autres, j’ai plutôt mis du cabernet et du malbec.” Une évolution pour le vigneron de Pomerol qui a connu bien des déboires avec ce cépage complexe. “Le malbec, c’était pas terrible. Ca nous est arrivé de laisser les grappes par terre, alors que maintenant on en tire des cuvées magnifiques !” Autre avantage : la teneur en sucre des baies de malbec est plus faible, ce qui permet d’offrir aux consommateurs des vins au degré d’alcool contenu. </p>
 
-<!-- VIDEO PARCELLE 52 -->
+            <p>D’autres voient plus loin encore. Car à long-terme, les ajustements d’assemblage pourraient ne plus suffire, et le remplacement du merlot deviendrait alors inévitable. “Notre rôle, c’est de permettre le maintien d’une viticulture de qualité” explique Agnès Destrac-Irvine. Cette ingénieure de l’INRA (Institut national de la recherche agronomique) coordonne un projet nommé “Vitadapt” qui vise à identifier les candidats les plus sérieux pour remplacer le merlot s’il venait à faire défaut. “Le merlot présente un risque dans un futur proche” avertit la scientifique, qui cite l’horizon 2050.</p>
 
-	<p>Mais changer de cépage n’est pas si simple. Car même si l’INRA parvenait à identifier le remplaçcant idéal, encore faudrait-il que la législation évolue pour le voir arriver dans les verres. Pour l’heure, changer de cépage signifie bien souvent accepter de sortir ses terres d’une appellation. C’est ce qu’a fait Jérémy Ducourt, sur une petite portion des 400 hectares de vignoble détenus par sa famille. En 2014, il décide d’implanter des variétés hybrides, des cépages résistants aux maladies de la vigne. “Ces variétés n’étaient pas autorisées, on ne pouvait pas commercialiser le vin” explique le responsable de production des vignobles Ducourt, qui finit toutefois par obtenir un statut expérimental. Le vin pourra dorénavant être commercialisé, mais hors de question de faire figurer la mention de l’AOC. La bouteille, nommée “Metissage”, entre dans la catégorie “Vin sans indication géographique”. En plus d’être estampillée “vin de France”, elle doit donc subir un changement de forme, un changement d’étiquette, et passer par un nouveau canal de commercialisation. Un choc culturel pour une région qui a l’habitude de parer ses flacons du nom des plus prestigieuses appellations du pays. Une seule solution : faire évoluer les cahiers des charges des appellations. “Je travaille actuellement sur l’intégration de nouveaux cépages dans le cahier des charges des AOC, explique Jérémy Ducourt, qui assure que rien n’est figé. J’ai obtenu l’élaboration d’une liste de cépages en annexe qui autorise l’implantation de nouvelles variétés à titre expérimental, dans un objectif d’adaptation au réchauffement climatique et de réduction de la quantité de produits phytosanitaires utilisés.” Et le pionnier du changement de cépage est formel : plusieurs domaines ont déjà prévu de saisir cette opportunité. </p>
+            <!-- VIDEO PARCELLE 52 -->
 
-	<p> Reste que beaucoup d’exploitants doutent encore de la nécessité de prévoir un éventuel changement de cépage. Un doute particulièrement marqué dans les régions où le merlot domine, comme Saint-Emilion ou Pomerol. “Je pense sincèrement que le merlot va s’adapter, affirme Jean-Marie Garde, qui dirige le Syndicat viticole de Pomerol. La nature rectifie bien le tir.” Une confiance dans la plante qui pourrait jouer des tours à ces régions fortement dépendantes d’un cépage unique. </p> 
+            <p>Mais changer de cépage n’est pas si simple. Car même si l’INRA parvenait à identifier le remplaçcant idéal, encore faudrait-il que la législation évolue pour le voir arriver dans les verres. Pour l’heure, changer de cépage signifie bien souvent accepter de sortir ses terres d’une appellation. C’est ce qu’a fait Jérémy Ducourt, sur une petite portion des 400 hectares de vignoble détenus par sa famille. En 2014, il décide d’implanter des variétés hybrides, des cépages résistants aux maladies de la vigne. “Ces variétés n’étaient pas autorisées, on ne pouvait pas commercialiser le vin” explique le responsable de production des vignobles Ducourt, qui finit toutefois par obtenir un statut expérimental. Le vin pourra dorénavant être commercialisé, mais hors de question de faire figurer la mention de l’AOC. La bouteille, nommée “Metissage”, entre dans la catégorie “Vin sans indication géographique”. En plus d’être estampillée “vin de France”, elle doit donc subir un changement de forme, un changement d’étiquette, et passer par un nouveau canal de commercialisation. Un choc culturel pour une région qui a l’habitude de parer ses flacons du nom des plus prestigieuses appellations du pays. Une seule solution : faire évoluer les cahiers des charges des appellations. “Je travaille actuellement sur l’intégration de nouveaux cépages dans le cahier des charges des AOC, explique Jérémy Ducourt, qui assure que rien n’est figé. J’ai obtenu l’élaboration d’une liste de cépages en annexe qui autorise l’implantation de nouvelles variétés à titre expérimental, dans un objectif d’adaptation au réchauffement climatique et de réduction de la quantité de produits phytosanitaires utilisés.” Et le pionnier du changement de cépage est formel : plusieurs domaines ont déjà prévu de saisir cette opportunité. </p>
 
-</article>
+            <p> Reste que beaucoup d’exploitants doutent encore de la nécessité de prévoir un éventuel changement de cépage. Un doute particulièrement marqué dans les régions où le merlot domine, comme Saint-Emilion ou Pomerol. “Je pense sincèrement que le merlot va s’adapter, affirme Jean-Marie Garde, qui dirige le Syndicat viticole de Pomerol. La nature rectifie bien le tir.” Une confiance dans la plante qui pourrait jouer des tours à ces régions fortement dépendantes d’un cépage unique. </p>
 
+        </article>
 
-	<!-- PIED SUR RIESLING-->
+        <!-- PIED SUR RIESLING-->
 
-<article>
-	<h1 class="mb-3"> Du vin d’Alsace en Aquitaine </h1>
+        <article>
+            <h1 class="mb-3"> Du vin d’Alsace en Aquitaine </h1>
 
-	<P> Certains pensent que le vin s’adaptera facilement au réchauffement climatique, il suffit de décaler chaque cépage vers le nord. Le syrah du Midi dans le Bordelais de demain orphelin de son merlot désormais bourguignon. Le directeur du château Petit Val, grand cru classé de Saint Emilion, David Liorit, a lui, un autre avis : “en terme de climat, on vit plutôt une transition qui se joue différemment selon chaque implantation.” </P>
-	
-	<p class="exergue">
-		“Quand j’ai appelé mon pépiniériste, il m’a pris pour un fou !”
-	</p>
+            <P> Certains pensent que le vin s’adaptera facilement au réchauffement climatique, il suffit de décaler chaque cépage vers le nord. Le syrah du Midi dans le Bordelais de demain orphelin de son merlot désormais bourguignon. Le directeur du château Petit Val, grand cru classé de Saint Emilion, David Liorit, a lui, un autre avis : “en terme de climat, on vit plutôt une transition qui se joue différemment selon chaque implantation.” </P>
 
-	<p> Pour preuve ? Alors que de nombreuses voix appellent à adopter des cépages plus méridionaux pour faire face à l’augmentation des températures constatée dans le Bordelais, lui n’a pas hésité à se mettre au Riesling, il y a de ça deux ans. Un cépage alsacien, «carrément plus septentrional s’étonne David Liorit. J’allais à l’inverse de tout le monde; quand j’ai appelé mon pépiniériste, il m’a pris pour un fou !» </P>
+            <p class="exergue">
+                “Quand j’ai appelé mon pépiniériste, il m’a pris pour un fou !”
+            </p>
 
-	<p> Mais le fait est là : les microclimats topographiques viennent largement contrebalancer la météo, du moins diversifier les réponses qu’on peut lui apporter. La plupart des vignobles, de la Champagne au Bordelais, en passant par la Bourgogne, sont vallonnés. Que l’on passe de la face nord à la face sud de la moindre colline — adret ou ubac — et l’ensoleillement ou la température varie. </p>
+            <p> Pour preuve ? Alors que de nombreuses voix appellent à adopter des cépages plus méridionaux pour faire face à l’augmentation des températures constatée dans le Bordelais, lui n’a pas hésité à se mettre au Riesling, il y a de ça deux ans. Un cépage alsacien, «carrément plus septentrional s’étonne David Liorit. J’allais à l’inverse de tout le monde; quand j’ai appelé mon pépiniériste, il m’a pris pour un fou !» </P>
 
-	<p> Certains vont jusqu’à exploiter la topographie à fond pour y implanter des cépages exotiques, traditionnellement inconnus dans la région, c’est le pari du domaine du petit Val et de ses trente ares de combes fertiles et humides, souvent sous le brouillard, qui accueillent désormais du Riesling. «Même si elles sont en appellation Saint-Emilion, commente son directeur, je n’aurais pas fait un vin de qualité suffisante pour notre château avec, alors j’ai essayé d’innover, de ne pas faire le mouton de Panurge.» </p>
+            <p> Mais le fait est là : les microclimats topographiques viennent largement contrebalancer la météo, du moins diversifier les réponses qu’on peut lui apporter. La plupart des vignobles, de la Champagne au Bordelais, en passant par la Bourgogne, sont vallonnés. Que l’on passe de la face nord à la face sud de la moindre colline — adret ou ubac — et l’ensoleillement ou la température varie. </p>
 
-	<p> Planter du Riesling à cet endroit n’aurait pas forcément été possible il y a quinze ans, mais avec les étés un peu plus arides, cet endroit n’est plus autant inondé qu’avant, et peut donc maintenant accueillir du Riesling, qui aurait peut-être pourri sinon. Les premières 1500 bouteilles de riesling du Château Petit Val devront voir le jour d’ici deux ou trois ans, quand la greffe du nouveau cépage aura pris. </p>
+            <p> Certains vont jusqu’à exploiter la topographie à fond pour y implanter des cépages exotiques, traditionnellement inconnus dans la région, c’est le pari du domaine du petit Val et de ses trente ares de combes fertiles et humides, souvent sous le brouillard, qui accueillent désormais du Riesling. «Même si elles sont en appellation Saint-Emilion, commente son directeur, je n’aurais pas fait un vin de qualité suffisante pour notre château avec, alors j’ai essayé d’innover, de ne pas faire le mouton de Panurge.» </p>
 
-	<!-- PAPIER CHAMPAGNE-->
-</p>
+            <p> Planter du Riesling à cet endroit n’aurait pas forcément été possible il y a quinze ans, mais avec les étés un peu plus arides, cet endroit n’est plus autant inondé qu’avant, et peut donc maintenant accueillir du Riesling, qui aurait peut-être pourri sinon. Les premières 1500 bouteilles de riesling du Château Petit Val devront voir le jour d’ici deux ou trois ans, quand la greffe du nouveau cépage aura pris. </p>
 
+            <!-- PAPIER CHAMPAGNE-->
+            </p>
 
-</article>
+        </article>
 
-</div> <!-- arrêt de container fluid rose -->
-<div class="container-fluid mt-3" style="background-color: #FFFDE2">
-	<div class="row">
-		<img src="assets/images/titreChampagne.jpg" class="img-fluid">
-	</div>
-<article>
+    </div> <!-- arrêt de container fluid rose -->
 
-	<h2>  Même en Champagne, où le climat continental protège la vigne de la chaleur, les vignerons constatent déjà les premiers signes du réchauffement climatique. Certaines maisons commencent à investir dans des terroirs en Angleterre. </h2>
 
-	<p> Plusieurs études prévoient des hausses de température qui rendraient ces régions trop chaudes pour les raisins traditionnellement cultivés (pinot noir, meunier, chardonnay). Faudra-t-il déplacer les vignes hors de la Champagne, ou remplacer le Champagne par d’autres vins pétillants semblables, comme le sparkling wine anglais ? </p>
+    <!--       II Champagne     -->
 
-	<p> Certains commencent déjà à regarder vers le nord. C’est le cas de Taittinger, la première maison française à se lancer au Royaume-Uni. Elle s’est installée depuis 2015 dans le Kent, dans un ancien verger de pommiers, pour y produire son sparkling wine Domaine Evremond. Terroir calcaire, des coteaux orientés au sud et une élévation d’entre 50 et 100 mètres au-dessus de la mer… ce sont des conditions géographiques qui ressemblent à ceux de la Champagne tout en rapportant plus de fraîcheur. La maison envisage d’en produire 300 000 bouteilles haut de gamme dès 2022. </p>
+    <div class="container-fluid mt-3" style="background-color: #FFFDE2">
+        <div class="row">
+            <img src="assets/images/titreChampagne.jpg" class="img-fluid">
+        </div>
+        <article>
 
-	<p class="exergue">
-		“On n’a pas peur du sparkling wine anglais ou de sa version italienne.”
-	</p>
+            <h2>  Même en Champagne, où le climat continental protège la vigne de la chaleur, les vignerons constatent déjà les premiers signes du réchauffement climatique. Certaines maisons commencent à investir dans des terroirs en Angleterre. </h2>
 
-	<p> Mais comme un vin cultivé hors de la région nord-est de la France ne porterait jamais le nom de Champagne, certains rejettent catégoriquement l’idée que des vins pétillants étrangers puissent remplacer ce fameux vin français. “On ne peut pas comparer les terroirs, on n’a pas peur du sparkling wine anglais ou de sa version italienne, amère”, affirme Thibault Le Mailloux. Le champagne made in Great Britain, ce n’est pas pour demain, confirme Thierry Forest-Marié, directeur de la maison de champagne du même nom, à Trigny : “Il y a un changement au niveau de l’aire d’appellation aujourd’hui, mais c’est un ajustement, cela n’ira pas au delà.” </p>
+            <p> Plusieurs études prévoient des hausses de température qui rendraient ces régions trop chaudes pour les raisins traditionnellement cultivés (pinot noir, meunier, chardonnay). Faudra-t-il déplacer les vignes hors de la Champagne, ou remplacer le Champagne par d’autres vins pétillants semblables, comme le sparkling wine anglais ? </p>
 
-	<p> Aujourd’hui, les chiffres indiquent que le marché du vin pétillant en Angleterre reste toujours modeste. Il ne représente que 1 % de la consommation de vin au Royaume-Uni, et la plupart des vignobles misent sur le chardonnay et le pinot noir. Pas besoin encore de s'inquiéter du côté des Champenois… </p>
+            <p> Certains commencent déjà à regarder vers le nord. C’est le cas de Taittinger, la première maison française à se lancer au Royaume-Uni. Elle s’est installée depuis 2015 dans le Kent, dans un ancien verger de pommiers, pour y produire son sparkling wine Domaine Evremond. Terroir calcaire, des coteaux orientés au sud et une élévation d’entre 50 et 100 mètres au-dessus de la mer… ce sont des conditions géographiques qui ressemblent à ceux de la Champagne tout en rapportant plus de fraîcheur. La maison envisage d’en produire 300 000 bouteilles haut de gamme dès 2022. </p>
 
+            <p class="exergue">
+                “On n’a pas peur du sparkling wine anglais ou de sa version italienne.”
+            </p>
 
-	<h3> Des alternatives au déplacement géographique </h3>
+            <p> Mais comme un vin cultivé hors de la région nord-est de la France ne porterait jamais le nom de Champagne, certains rejettent catégoriquement l’idée que des vins pétillants étrangers puissent remplacer ce fameux vin français. “On ne peut pas comparer les terroirs, on n’a pas peur du sparkling wine anglais ou de sa version italienne, amère”, affirme Thibault Le Mailloux. Le champagne made in Great Britain, ce n’est pas pour demain, confirme Thierry Forest-Marié, directeur de la maison de champagne du même nom, à Trigny : “Il y a un changement au niveau de l’aire d’appellation aujourd’hui, mais c’est un ajustement, cela n’ira pas au delà.” </p>
 
-	<p> Depuis 20 ans, la hausse moyenne d’un degré en Champagne a fait avancer les vendanges d’une quinzaine de jours. Et la stratégie de la récolte, elle aussi, a évolué.“Traditionnellement, il y a 20 ans, tout le monde récoltait tout. Mais aujourd’hui, on insiste sur des vendanges à point, c’est-à-dire si le cépage n’est pas mûr, on attend. C’est une approche beaucoup plus pointue”, explique Thibault Le Mailloux, directeur de la communication au sein du Comité interprofessionnel du vin de Champagne. </p>
+            <p> Aujourd’hui, les chiffres indiquent que le marché du vin pétillant en Angleterre reste toujours modeste. Il ne représente que 1 % de la consommation de vin au Royaume-Uni, et la plupart des vignobles misent sur le chardonnay et le pinot noir. Pas besoin encore de s'inquiéter du côté des Champenois… </p>
 
-	<p> Les Champenois réfléchissent déjà aux nouvelles variétés de cépages qui sont plus résistantes à la maladies, plus lentes à maturer, au plus fort taux d’acidité. Leur objectif est d’anticiper les changements environnementaux et d’adapter les pratiques pour obtenir le même vin avec un climat différent. </p>
+            <h3> Des alternatives au déplacement géographique </h3>
 
-	<p> Les changements de température progressifs ont également entraîné une diminution de l’acidité des vins et une augmentation du degré potentiel d’alcool des raisins. Un détail qui peut être réglé beaucoup plus facilement que le déplacement géographique, selon les Champenois.Etant donné que le champagne est obtenu d’ordinaire par un mélange de vins de parcelles et d’années différentes, ses producteurs peuvent s’adapter beaucoup plus facilement et discrètement que tous les autres : “On peut facilement corriger l’acidité d’un vin de 2015 avec le sucre de celui de 2016 ou vice versa”, explique Thierry Forest-Marié. C’est cette méthode de production particulière du champagne non millésimé qui en fait peut-être l’une des appellations d’origine controlée les plus en sécurité face au réchauffement… pour l’heure. </p>
+            <p> Depuis 20 ans, la hausse moyenne d’un degré en Champagne a fait avancer les vendanges d’une quinzaine de jours. Et la stratégie de la récolte, elle aussi, a évolué.“Traditionnellement, il y a 20 ans, tout le monde récoltait tout. Mais aujourd’hui, on insiste sur des vendanges à point, c’est-à-dire si le cépage n’est pas mûr, on attend. C’est une approche beaucoup plus pointue”, explique Thibault Le Mailloux, directeur de la communication au sein du Comité interprofessionnel du vin de Champagne. </p>
 
-</p>
+            <p> Les Champenois réfléchissent déjà aux nouvelles variétés de cépages qui sont plus résistantes à la maladies, plus lentes à maturer, au plus fort taux d’acidité. Leur objectif est d’anticiper les changements environnementaux et d’adapter les pratiques pour obtenir le même vin avec un climat différent. </p>
 
-<!-- VIDEO REIMS -->
+            <p> Les changements de température progressifs ont également entraîné une diminution de l’acidité des vins et une augmentation du degré potentiel d’alcool des raisins. Un détail qui peut être réglé beaucoup plus facilement que le déplacement géographique, selon les Champenois.Etant donné que le champagne est obtenu d’ordinaire par un mélange de vins de parcelles et d’années différentes, ses producteurs peuvent s’adapter beaucoup plus facilement et discrètement que tous les autres : “On peut facilement corriger l’acidité d’un vin de 2015 avec le sucre de celui de 2016 ou vice versa”, explique Thierry Forest-Marié. C’est cette méthode de production particulière du champagne non millésimé qui en fait peut-être l’une des appellations d’origine controlée les plus en sécurité face au réchauffement… pour l’heure. </p>
 
+            </p>
 
-	<!-- PAPIER TECHNO-->
- 
-	<h1> Des vignerons 2.0 ? </h1>
+            <!-- VIDEO REIMS -->
 
-	<h2> Étés trop chauds, gel de plus en plus régulier : pour répondre au changement climatique, le monde viticole innove. Une stratégie qui peut payer à court terme mais s’avère limitée sur le long terme. </h2>
+            <!-- PAPIER TECHNO-->
 
-	<p> Il fait de grands gestes, mouline des bras.“ Vous auriez dû voir au printemps dernier à St Émilion : des brasiers entre les vignes, des hélicoptères qui volaient  au-dessus des parcelles, c’était Apocalypse Now ! Ils étaient prêts à tout pour éviter le gel !” Jeremy Ducourt, depuis ses terres de l’Entre-deux-Mers, a observé ses voisins girondins tenter le tout pour le tout pour ne pas perdre leur récolte. “Bien sûr, les hélicoptères, ça coûte très cher, tout le monde n’a pas pu y avoir recours.” Pour lui, la solution c’est l’assurance, même si elle ne lui permet pas totalement de compenser ses pertes. Or dans la région, seul 25% des vignerons sont assurés, un aperçu du risque que peut représenter le gel. L’épisode de gel tardif qu’il décrit -fin avril 2017- aura finalement coûté environ 1 milliard d’euros, selon la Fédération des grands vins de Bordeaux (FGVB), à peu près autant qu’en 2013, lorsque le même épisode climatique s’était produit. “On était habitué à avoir du gel une fois tous les 25 ans, désormais on a peur chaque année”, conclut Jérémy Ducourt. </p>
+            <h1> Des vignerons 2.0 ? </h1>
 
-	<p> Les épisodes climatiques extrêmes, aussi bien froids que chauds, sont une des conséquences du changement climatique. Face à ce nouveau défi les vignerons sont contraints d’avoir recours à des technologies qui n’avaient historiquement rien à voir avec la vigne, d’où les hélicoptères. “Les hélices qui tournent vont plaquer au sol la température positive que l’on trouve en altitude. Ça peut permettre de gagner quelques degrés”, explique Gérard Stumpler, ingénieur. Un principe déjà mis en oeuvre par les agriculteurs qui utilisent des tours antigels, grandes structures métalliques semblables à des éoliennes qu’ils placent au milieu des vignes. “Le problème c’est qu’elles coûtent extrêmement cher et ne couvrent que 5 hectares. L’avantage de l’hélicoptère c'est qu’il se déplace, et qu'on peut y avoir recours au moment opportun, détaille Gérard Stumpler, c’est le modèle de l’hélicoptère qui m’a conduit à inventer Protégel.” </p>
+            <p class="lead"> Étés trop chauds, gel de plus en plus régulier : pour répondre au changement climatique, le monde viticole innove. Une stratégie qui peut payer à court terme mais s’avère limitée sur le long terme. </p>
 
-	<h3> Un drone pour réchauffer les vignes </h3>
+            <p> Il fait de grands gestes, mouline des bras.“ Vous auriez dû voir au printemps dernier à St Émilion : des brasiers entre les vignes, des hélicoptères qui volaient au-dessus des parcelles, c’était Apocalypse Now ! Ils étaient prêts à tout pour éviter le gel !” Jeremy Ducourt, depuis ses terres de l’Entre-deux-Mers, a observé ses voisins girondins tenter le tout pour le tout pour ne pas perdre leur récolte. “Bien sûr, les hélicoptères, ça coûte très cher, tout le monde n’a pas pu y avoir recours.” Pour lui, la solution c’est l’assurance, même si elle ne lui permet pas totalement de compenser ses pertes. Or dans la région, seul 25% des vignerons sont assurés, un aperçu du risque que peut représenter le gel. L’épisode de gel tardif qu’il décrit -fin avril 2017- aura finalement coûté environ 1 milliard d’euros, selon la Fédération des grands vins de Bordeaux (FGVB), à peu près autant qu’en 2013, lorsque le même épisode climatique s’était produit. “On était habitué à avoir du gel une fois tous les 25 ans, désormais on a peur chaque année”, conclut Jérémy Ducourt. </p>
 
-	<p> Cet ingénieur, également arboriculteur en Corrèze, s'est inspiré du principe de ventilation des tour antigels et des hélicoptères pour imaginer un drone qui volerait au-dessus des vignes et les réchaufferait : Protégel. “Le principe est toujours le même : ventiler les vignes et faire descendre l’air chaud.” La machine de Gérard Strumpler, qui devrait être finalisée en 2019, a pour particularité d’être hybride. “On n’aurait pas pu imaginer Protégel fonctionner avec une simple batterie comme la plupart des drones, cela demandait beaucoup trop d’énergie.” Car en plus de brasser l’air, le drone est équipé pour lutter contre ce qu'on appelle “le gel advectif” : le gel qui a lieu lorsque l’air en altitude est trop froid pour être échangé à profit. “J’ai équipé Protégel de brûleurs de gaz ce qui va lui permettre de réchauffer les vignes comme le ferait un brasier.” Avec ce drone, plus de scène “Apocalypse Now”, mais une machine qui fait à la fois office de brasier et d’hélicoptère pour un prix compris entre 20 000 et 30 000 euros, la moitié du coût d’une tour antigel. </p>
+            <p> Les épisodes climatiques extrêmes, aussi bien froids que chauds, sont une des conséquences du changement climatique. Face à ce nouveau défi les vignerons sont contraints d’avoir recours à des technologies qui n’avaient historiquement rien à voir avec la vigne, d’où les hélicoptères. “Les hélices qui tournent vont plaquer au sol la température positive que l’on trouve en altitude. Ça peut permettre de gagner quelques degrés”, explique Gérard Stumpler, ingénieur. Un principe déjà mis en oeuvre par les agriculteurs qui utilisent des tours antigels, grandes structures métalliques semblables à des éoliennes qu’ils placent au milieu des vignes. “Le problème c’est qu’elles coûtent extrêmement cher et ne couvrent que 5 hectares. L’avantage de l’hélicoptère c'est qu’il se déplace, et qu'on peut y avoir recours au moment opportun, détaille Gérard Stumpler, c’est le modèle de l’hélicoptère qui m’a conduit à inventer Protégel.” </p>
 
-<p class="exergue">
-		“Quand on voit combien les viticulteurs craignent le gel, on se dit que bien sûr, c'est un projet d’avenir.”
-	</p>
+            <h3> Un drone pour réchauffer les vignes </h3>
 
-	<p> Dans le monde de la viticulture le projet de Gérard Strumpler ne laisse personne indifférent. “Répondre au changement climatique par des innovations technologiques polluantes...on voit tout de suite le problème” commente Dominique Techer, vigneron et syndiqué à la Confédération Paysanne. L’ingénieur le reconnaît lui-même : “Je regrette que mon projet ne soit pas écologique...mais je n’ai pas réussi à trouver de solution satisfaisante, mon drone reste toujours moins polluant que les hélicoptères.” D’autres se font beaucoup moins sceptiques quand à la pertinence du projet. Protégel a d’ailleurs remporté le 2e prix du concours Agreen qui valorise les startups dans le monde agricole au salon de l’agriculture 2018. “Quand on voit combien les viticulteurs craignent le gel, on se dit que bien sûr, c'est un projet d’avenir”, conclut Isabelle Beaurepaire, une des organisatrices du concours. </p>
+            <p> Cet ingénieur, également arboriculteur en Corrèze, s'est inspiré du principe de ventilation des tour antigels et des hélicoptères pour imaginer un drone qui volerait au-dessus des vignes et les réchaufferait : Protégel. “Le principe est toujours le même : ventiler les vignes et faire descendre l’air chaud.” La machine de Gérard Strumpler, qui devrait être finalisée en 2019, a pour particularité d’être hybride. “On n’aurait pas pu imaginer Protégel fonctionner avec une simple batterie comme la plupart des drones, cela demandait beaucoup trop d’énergie.” Car en plus de brasser l’air, le drone est équipé pour lutter contre ce qu'on appelle “le gel advectif” : le gel qui a lieu lorsque l’air en altitude est trop froid pour être échangé à profit. “J’ai équipé Protégel de brûleurs de gaz ce qui va lui permettre de réchauffer les vignes comme le ferait un brasier.” Avec ce drone, plus de scène “Apocalypse Now”, mais une machine qui fait à la fois office de brasier et d’hélicoptère pour un prix compris entre 20 000 et 30 000 euros, la moitié du coût d’une tour antigel. </p>
 
-	<h3> Comment irriguer ? </h3>
+            <p class="exergue">
+                “Quand on voit combien les viticulteurs craignent le gel, on se dit que bien sûr, c'est un projet d’avenir.”
+            </p>
 
-	<p> Le froid n'est pas le seul danger provoqué par le changement climatique. Dans le sud de la France, la hausse moyenne des températures nuit à la qualité du raisin qui devient trop concentré et trop alcoolisé. Depuis environ 40 ans, l'appellation d’origine contrôlée “Costières de Nîmes” peine à maintenir sa qualité d’antan. Des études de la société Itk, spécialiste du développement d’outils d’aide à la décision pour l’agriculture, sur la période 1955-2014 détaillent ces conditions de dégradation. “Des années 55 à 75, le climat était optimal pour la production du vin rouge 6 années sur 10, sans aucune irrigation”, commente Philippe Stoop, chercheur un sein d’Itk. C'est dans les années 1970 que le cahier des charges de l’appellation est fixé, définissant le mode de conduite de la vigne. Or, 40 ans plus tard la situation hydrique s’est détériorée, et les conditions climatiques ne sont favorables à la production qu’une année sur 4. Cerise sur le gâteau, le déficit hydrique est devenu la situation la plus fréquente (9 années sur 20). “Nous avons estimé qu’il faudrait irriguer une année sur 4”, conclut Philippe Stoop. Si dans de nombreuses régions, l’irrigation est interdite, elle est en revanche permise par le cahier des charges du Costières de Nîmes, si les conditions climatiques le requièrent. </p>
+            <p> Dans le monde de la viticulture le projet de Gérard Strumpler ne laisse personne indifférent. “Répondre au changement climatique par des innovations technologiques polluantes...on voit tout de suite le problème” commente Dominique Techer, vigneron et syndiqué à la Confédération Paysanne. L’ingénieur le reconnaît lui-même : “Je regrette que mon projet ne soit pas écologique...mais je n’ai pas réussi à trouver de solution satisfaisante, mon drone reste toujours moins polluant que les hélicoptères.” D’autres se font beaucoup moins sceptiques quand à la pertinence du projet. Protégel a d’ailleurs remporté le 2e prix du concours Agreen qui valorise les startups dans le monde agricole au salon de l’agriculture 2018. “Quand on voit combien les viticulteurs craignent le gel, on se dit que bien sûr, c'est un projet d’avenir”, conclut Isabelle Beaurepaire, une des organisatrices du concours. </p>
 
-<p class="exergue">
-		“Pour avoir un bon vin, la vigne doit souffrir.”
-	</p>
+            <h3> Comment irriguer ? </h3>
 
-	<p> Elle reste pourtant une solution contestable dans une région particulièrement touchée par la réduction de ses ressources hydriques. Le Bureau de Recherches Géologiques et minières, qui dresse un bilan mensuel du niveau des nappes phréatiques en France, a d’ailleurs déclaré la vallée du Rhône zone la plus touchée par l'assèchement de sa nappe phréatique en août 2017. De plus irriguer ne résout pas tous les problèmes, encore faut-il savoir doser la quantité d’eau. “Un vieux proverbe dit que pour avoir un bon vin, la vigne doit souffrir et c'est parfaitement vrai”, explique Philippe Stoop. Le déficit hydrique de la plante doit donc être maintenu, sans pour autant qu’on l’assèche. Pour connaître les besoins en eau de la plante, ITK a créé le logiciel Vintel, il comporte une énorme base de donnée, venue principalement de l’INRA (Institut National de la Recherche Agronomique) et permet de connaître avec précision les besoins en eau de la plante. “Le viticulteur doit rentrer des informations concernant le climat, son sol, son mode de conduite de la vigne, à partir de cela Vintel calcule comment il faut irriguer pour avoir le meilleur raisin possible.” Le logiciel propose également de faire des prospections concernant le changement de cépage et ainsi de tester fictivement des cépages plus résistants à la chaleur dans la vallée du Rhône. Philippe Stoop sourit : “Ce que Vintel ne peut pas dire en revanche, c'est si ce vin aura le même goût que le Costières de Nîmes.” </p>
+            <p> Le froid n'est pas le seul danger provoqué par le changement climatique. Dans le sud de la France, la hausse moyenne des températures nuit à la qualité du raisin qui devient trop concentré et trop alcoolisé. Depuis environ 40 ans, l'appellation d’origine contrôlée “Costières de Nîmes” peine à maintenir sa qualité d’antan. Des études de la société Itk, spécialiste du développement d’outils d’aide à la décision pour l’agriculture, sur la période 1955-2014 détaillent ces conditions de dégradation. “Des années 55 à 75, le climat était optimal pour la production du vin rouge 6 années sur 10, sans aucune irrigation”, commente Philippe Stoop, chercheur un sein d’Itk. C'est dans les années 1970 que le cahier des charges de l’appellation est fixé, définissant le mode de conduite de la vigne. Or, 40 ans plus tard la situation hydrique s’est détériorée, et les conditions climatiques ne sont favorables à la production qu’une année sur 4. Cerise sur le gâteau, le déficit hydrique est devenu la situation la plus fréquente (9 années sur 20). “Nous avons estimé qu’il faudrait irriguer une année sur 4”, conclut Philippe Stoop. Si dans de nombreuses régions, l’irrigation est interdite, elle est en revanche permise par le cahier des charges du Costières de Nîmes, si les conditions climatiques le requièrent. </p>
 
-	<h3> Changer le mode de conduite de la vigne </h3>
+            <p class="exergue">
+                “Pour avoir un bon vin, la vigne doit souffrir.”
+            </p>
 
-	<p> Logiciels d’anticipation, drones aériens, à quoi on peut rajouter les capteurs pour connaître en temps réel l’état de sa vigne (maladies, risques de gel) et tous les nouveaux processus de vinification qui suivent la récolte du raisin...les innovations ne manquent pas dans la filière du vin pour se prémunir du changement climatique. “Mais des solutions moins spectaculaires existent, tempère Jean-Marc Touzard chercheur à l’INRA, plusieurs techniques existent pour éviter d’irriguer. On peut par exemple changer la hauteur du feuillage et le laisser grimper plus haut pour qu’il puisse absorber plus d’humidité." Une solution connue des viticulteurs et dont la société ITK a mesuré les impacts sur le Costières de Nîmes.“Changer la hauteur de la végétation permettrait de réduire la consommation d’eau, tout comme le passage à un interrang plus large”, analyse Philippe Stoop. Selon les prévisions d’Itk, le nombre de jours en situation de déficit hydrique grave réduirait de 40% si on changeait ces deux facteurs. Pourtant, ces prescriptions ne sont pas totalement conformes au cahier des charges actuel du Costières de Nîmes et demeurent pour l'instant inapplicables. “Les faire évoluer serait bénéfique”, conclut le chercheur. </p>
+            <p> Elle reste pourtant une solution contestable dans une région particulièrement touchée par la réduction de ses ressources hydriques. Le Bureau de Recherches Géologiques et minières, qui dresse un bilan mensuel du niveau des nappes phréatiques en France, a d’ailleurs déclaré la vallée du Rhône zone la plus touchée par l'assèchement de sa nappe phréatique en août 2017. De plus irriguer ne résout pas tous les problèmes, encore faut-il savoir doser la quantité d’eau. “Un vieux proverbe dit que pour avoir un bon vin, la vigne doit souffrir et c'est parfaitement vrai”, explique Philippe Stoop. Le déficit hydrique de la plante doit donc être maintenu, sans pour autant qu’on l’assèche. Pour connaître les besoins en eau de la plante, ITK a créé le logiciel Vintel, il comporte une énorme base de donnée, venue principalement de l’INRA (Institut National de la Recherche Agronomique) et permet de connaître avec précision les besoins en eau de la plante. “Le viticulteur doit rentrer des informations concernant le climat, son sol, son mode de conduite de la vigne, à partir de cela Vintel calcule comment il faut irriguer pour avoir le meilleur raisin possible.” Le logiciel propose également de faire des prospections concernant le changement de cépage et ainsi de tester fictivement des cépages plus résistants à la chaleur dans la vallée du Rhône. Philippe Stoop sourit : “Ce que Vintel ne peut pas dire en revanche, c'est si ce vin aura le même goût que le Costières de Nîmes.” </p>
 
-	<p> Dans la lutte contre le changement climatique la richesse des sols est également un enjeu technique de grande importance. “En gérant le sol différemment avec moins d’engrais, plus de compost on pourrait obtenir des sols qui conserverait mieux l'humidité et ainsi répondre aux besoins en irrigation”, conseille Jean-Marc Touzard. Ce à quoi acquiesce fortement Dominique Techer de la Confédération Paysanne. “Si l’on veut conserver du bon vin, il un sol riche, profond et vivant.” L’agroforesterie, qui consiste à planter des arbres à proximité des cultures pour améliorer la qualité des sols apparaît alors comme une solution. “Il faut également des animaux, des insectes pour enrichir le sol. Pour cela le meilleur moyen reste de réduire énormément, voire d’arrêter, l’utilisation des pesticides.” </p>
+            <h3> Changer le mode de conduite de la vigne </h3>
 
+            <p> Logiciels d’anticipation, drones aériens, à quoi on peut rajouter les capteurs pour connaître en temps réel l’état de sa vigne (maladies, risques de gel) et tous les nouveaux processus de vinification qui suivent la récolte du raisin...les innovations ne manquent pas dans la filière du vin pour se prémunir du changement climatique. “Mais des solutions moins spectaculaires existent, tempère Jean-Marc Touzard chercheur à l’INRA, plusieurs techniques existent pour éviter d’irriguer. On peut par exemple changer la hauteur du feuillage et le laisser grimper plus haut pour qu’il puisse absorber plus d’humidité." Une solution connue des viticulteurs et dont la société ITK a mesuré les impacts sur le Costières de Nîmes.“Changer la hauteur de la végétation permettrait de réduire la consommation d’eau, tout comme le passage à un interrang plus large”, analyse Philippe Stoop. Selon les prévisions d’Itk, le nombre de jours en situation de déficit hydrique grave réduirait de 40% si on changeait ces deux facteurs. Pourtant, ces prescriptions ne sont pas totalement conformes au cahier des charges actuel du Costières de Nîmes et demeurent pour l'instant inapplicables. “Les faire évoluer serait bénéfique”, conclut le chercheur. </p>
 
-</article>
+            <p> Dans la lutte contre le changement climatique la richesse des sols est également un enjeu technique de grande importance. “En gérant le sol différemment avec moins d’engrais, plus de compost on pourrait obtenir des sols qui conserverait mieux l'humidité et ainsi répondre aux besoins en irrigation”, conseille Jean-Marc Touzard. Ce à quoi acquiesce fortement Dominique Techer de la Confédération Paysanne. “Si l’on veut conserver du bon vin, il un sol riche, profond et vivant.” L’agroforesterie, qui consiste à planter des arbres à proximité des cultures pour améliorer la qualité des sols apparaît alors comme une solution. “Il faut également des animaux, des insectes pour enrichir le sol. Pour cela le meilleur moyen reste de réduire énormément, voire d’arrêter, l’utilisation des pesticides.” </p>
 
-    <!--       ENCADRE       -->
+        </article>
 
-    <!--       EXERGUE       -->
+        <!--       ENCADRE       -->
 
-    <!--       GRILLE BOOTSRAP VIDEO + TEXTE      -->
-	<article class="row">
-		<div class="col-12 col-md-6 embed-responsive embed-responsive-16by9">
-			<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/fe9FbWduG50?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
-		
-		
-	</article>
+        <!--       EXERGUE       -->
 
+        <!--       GRILLE BOOTSRAP VIDEO + TEXTE      -->
+        <article class="row">
+            <div class="col-12 col-md-6 embed-responsive embed-responsive-16by9">
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/fe9FbWduG50?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
 
+        </article>
 
-   <script src="vendor/blazy.min.js">				</script>
-   <script type="text/javascript" src="app.js">		</script>
+        <script src="vendor/blazy.min.js">
+        </script>
+        <script type="text/javascript" src="app.js">
+        </script>
 
+    <!--       III VIGNERONS 2.0     -->
 
 </body>
+
 </html>
