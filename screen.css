@@ -98,6 +98,13 @@ p.leadPerso{
 
 }
 
+p.name{
+	margin-top: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-style: oblique;
+}
+
 /* INTER  */					
 
 /* EXERGUE  */
