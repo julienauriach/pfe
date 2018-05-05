@@ -31,6 +31,15 @@ p {
 	text-indent: 5%;
 }
 
+.infosPagination {
+	width: 30%;
+	display:inline-block;
+}
+.textePagination{
+	width: 60%;
+	display: inline-block;
+}
+
 .container-fluid {
 	margin-bottom:0px; 
 	margin-top:0px;
