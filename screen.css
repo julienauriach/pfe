@@ -7,42 +7,36 @@ html, body {
   line-height: 28px;
 }
 
-article, article.row {
-	max-width: 800px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom:0px; 
-	margin-top:0px;
-
-	padding-right: auto;
-	padding-left: auto;
-	padding-bottom:30px; 
-	padding-top:30px;
-}
-
-img{
+/*img{
 	margin-bottom:0px; 
 	margin-top:0px;
 	border-top: 0px;
-}
+}*/
 
 
 p {
 	text-indent: 5%;
 }
 
-.infosPagination {
+/*.infosPagination {
 	width: 30%;
 	display:inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 .textePagination{
 	width: 60%;
 	display: inline-block;
+		margin-left: 5%;
+	margin-right: 5%;
+}*/
+
+.container{
+	justify-content: center;
 }
 
-.container-fluid {
-	margin-bottom:0px; 
-	margin-top:0px;
+.centered{
+	justify-content: center;
 }
 
 .video {
