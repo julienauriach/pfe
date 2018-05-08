@@ -1,5 +1,3 @@
-
-;(function() {
-    // Initialize lazy loader
-    var bLazy = new Blazy();
-})();
+$(function() {
+  $('#texteJQ').html('Hello world. Ce texte est affiché par jQuery.');
+});
