@@ -104,27 +104,6 @@ p.name{
 	font-style: oblique;
 }
 
-#sections {
-  position: relative;
-  display: inline-block;
-  width: 250px;
-  top: 0px;
-  z-index: 90;
-}
-
-#gauche
-{
-	display: inline-block;
-	position: fixed;
-	margin-left: 0;
-}
-#droite
-{
-	display: inline-block;
-	position: fixed;
-	margin-left: 0;
-}
-
 /* INTER  */					
 
 /* EXERGUE  */
