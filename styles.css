@@ -31,10 +31,6 @@ p {
 	margin-right: 5%;
 }*/
 
-.container{
-	justify-content: center;
-}
-
 .video {
 	width: 100%;
 }
@@ -97,14 +93,57 @@ p.leadPerso{
 
 }
 
-p.name{
-	margin-top: 40px;
-	text-align: center;
-	font-weight: bold;
-	font-style: oblique;
+#sections{
 }
 
-/* INTER  */					
+
+
+/* Mobile : désactiver la visibilité de #gauche, activer la visibilité des images fixes  */
+
+#gauche{
+display: none;
+width: 100%;
+}	
+#droite{
+width: 100%;
+padding-left: 10%;
+padding-right: 10%;
+border-top: 100px;
+}	
+
+
+@media(min-width: 660px)
+{
+	#gauche{
+	display: inline-block;
+	width: 45%;
+	}	
+	#droite{
+	display: inline-block;
+	width: 55%;
+	padding: 5%;
+	}	
+}
+
+@media(min-width: 992px)
+{
+	#gauche{
+	display: inline-block;
+	width: 37%;
+	}	
+	#droite{
+	display: inline-block;
+	width: 63%;
+	padding: 5%;
+	}	
+}
+
+.objet
+{
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+					
 
 /* EXERGUE  */
 
