@@ -115,6 +115,22 @@ p.leadPerso{
 #sections{
 }
 
+#imgBck1{
+	background: url(assets/images/titre.jpg) no-repeat center fixed; 
+}
+#imgBck2{
+	background: url(assets/images/sdTraite.jpg) no-repeat center fixed; 
+}
+.fondImgResponsive{ 
+  margin:0;
+  padding:0;
+  height: 100%;
+  
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+
 
 
 /* Mobile : désactiver la visibilité de #gauche, activer la visibilité des images fixes  */
@@ -135,8 +151,6 @@ border-top: 100px;
 }
 
 /* Desktop : activer la visibilité de #gauche, désactiver la visibilité des images fixes  */
-
-
 
 @media(min-width: 660px)
 {
@@ -164,6 +178,7 @@ border-top: 100px;
 	.objetMobile
 	{
 	display: none;
+	}
 	}
 
 }
