@@ -126,7 +126,15 @@ p.leadPerso{
 	background-size: cover; /* version standardisée */
 }
 
-
+.parent-element-to-video {
+    overflow: hidden;
+}
+#vid {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+}
 
 
 /* Mobile : désactiver la visibilité de #gauche, activer la visibilité des images fixes  */
