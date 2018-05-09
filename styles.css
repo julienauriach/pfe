@@ -117,17 +117,13 @@ p.leadPerso{
 
 #imgBck1{
 	background: url(assets/images/titre.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover;*/ /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
 }
 #imgBck2{
-	background: url(assets/images/sdTraite.jpg) no-repeat center fixed; 
-}
-.fondImgResponsive{ 
-  margin:0;
-  padding:0;
-  height: 100%;
-  
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+	background: url(assets/images/sdTraiteGG.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover;*/ /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
 }
 
 
