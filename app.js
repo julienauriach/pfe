@@ -1,4 +1,5 @@
 // init controller
+var controller = new ScrollMagic.Controller();
 
 // create a scene
 
