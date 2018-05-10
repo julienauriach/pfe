@@ -125,11 +125,31 @@ p.leadPerso{
 	-webkit-background-size: cover;*/ /* pour anciens Chrome et Safari */
 	background-size: cover; /* version standardisée */
 }
+#imgBck3{
+	background: url(assets/images/bourguignon.png) no-repeat center fixed; 
+	-webkit-background-size: cover;*/ /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+}
+#imgBck4{
+	background: url(assets/images/cover2.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover;*/ /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+}
 
 .parent-element-to-video {
     overflow: hidden;
+    position: absolute;
+    right: 0px;
+    left: 0px;
 }
 #vid {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+}
+
+#vid_1 {
     height: 100%;
     width: 177.77777778vh; /* 100 * 16 / 9 */
     min-width: 100%;
