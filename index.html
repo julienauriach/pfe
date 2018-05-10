@@ -1,217 +1,153 @@
 <!DOCTYPE html>
-
 <!--    ATTENDUS DU DEBUT    -->
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Work+Sans|Cormorant:700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet"> 
-    <!--
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap.css">
+   <link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Work+Sans|Cormorant:700i" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet">
+   <!--
       font-family: 'Raleway', sans-serif;
       font-family: 'Oswald', sans-serif;
       font-family: 'Work Sans', sans-serif; 
       -->
-
 </head>
-
 <body>
-
-    <div id="imgBck1">
-        <p style="height: 300px; margin-bottom: 0"></p>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1 style="color: white; font-weight: bolder; background-color: rgba(0, 13, 26, 0.4); text-align: center;"> Bio 2.0 </h1> 
-<!--                     <audio autobuffer autoplay>
-                        <source src="assets/sound/" type=""> type="audio/mp3" src=""
-                    </audio> -->
+   <div id="imgBck1">
+      <p style="height: 300px; margin-bottom: 0"></p>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-4">
+               <h1 style="color: white; font-weight: bolder; background-color: rgba(0, 13, 26, 0.4); text-align: center;"> Bio 2.0 </h1>
+               <!--                     <audio autobuffer autoplay>
+                  <source src="assets/sound/" type=""> type="audio/mp3" src=""
+                  </audio> -->
+            </div>
+            <div class="col-md-8"></div>
+         </div>
+      </div>
+      <p style="height: 1700px; margin-bottom: 0"></p>
+   </div>
+   <div id="imgBck2">
+       <div id="sections" class="container-fluid">
+          <div class="row">
+             <div class="gauche">
+                <div id="highcharts-0b97d81e-bac1-44f8-857b-1e1f3c969c43" class="objet"></div>
+                <script>
+                   (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","http://code.highcharts.com/modules/funnel.js","http://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){Highcharts.setOptions({lang:{"decimalPoint":","}});var options={"chart":{"type":"area","polar":false,"style":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#333","fontSize":"16px","fontWeight":"normal","fontStyle":"normal"},"borderRadius":0,"borderWidth":0,"plotBorderWidth":2},"title":{"text":"Prix producteurs du lait","style":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#333333","fontSize":"25px","fontWeight":"normal","fontStyle":"normal"}},"subtitle":{"text":""},"exporting":{"enabled":false},"series":[{"name":"Prix du lait bio en Île-et-Vilaine","_colorIndex":0,"_symbolIndex":0,"marker":{},"negativeColor":"#1e88e5","color":"#ffca28"},{"name":"Prix moyen national du lait (conventionnel et bio)","_colorIndex":1,"_symbolIndex":1}],"plotOptions":{"series":{"animation":false,"dataLabels":{"style":{"color":"contrast","fontSize":"18px","fontWeight":"bold","textOutline":"1px 1px contrast"}}}},"data":{"csv":"\"Date\";\"Prix du lait bio en Île-et-Vilaine\";\"Prix moyen national du lait (conventionnel et bio)\"\n2013;395;460\n2014;420;380\n2015;440;325\n2016;460;300","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"yAxis":[{"title":{"text":"prix pour 1000 litres, en €"},"labels":{},"type":"logarithmic"}],"legend":{"itemStyle":{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","color":"#333333","fontSize":"16px","fontWeight":"bold","fontStyle":"normal","cursor":"pointer"},"borderRadius":6,"borderWidth":2},"tooltip":{"enabled":true,"borderRadius":8,"borderWidth":2},"credits":{"href":"","text":"Source : Agreste, Chambre d'agriculture d'Ile-et-Vilaine","enabled":true},"lang":{"decimalPoint":","},"xAxis":[{"title":{},"labels":{}}]};new Highcharts.Chart("highcharts-0b97d81e-bac1-44f8-857b-1e1f3c969c43", options);}}})();
+                </script>
+             </div>
+             <div class="droite">
+                <div class="hook" id="hook0">
+                   <p class="onBck">
+                      La conversion me rend inquiète ? « Non » grogne Marie* [prénom changé] en souriant, quatre tubes de trayeuse à air comprimé dans les mains. Elle et son mari y pensent maintenant depuis quelques années. « En fait, on s’est réellement posé la question du bio il y a deux trois ans, lors de la grosse crise du prix du lait. On s’est rendu compte, poursuit-elle, maintenant en train de désinfecter les pis de ses Prim’Holstein, qu’avec une structure importante, on vivait peu tout en faisant vivre beaucoup de gens. » 
+                   </p>
+                   <img class="objetMobile" src="assets/images/mobileGraph1.png"/>
+                   <p class="onBck">
+                      Sebastien a eu la chance d’être bien accompagné, il a fait des formations avec le CETA [le centre d’étude agricole d’île et Vilaine] et avec Agrobio [groupement national d’experts agronomes et d’agriculteurs bio, le groupement d’Ille et Villaine est le premier de France en nombre d’adhérents].
+                   </p>
+                   <p class="exergue onBck">
+                      « on vivait peu, tout en faisant vivre beaucoup de gens. »
+                   </p>
+                   <p class="onBck">   
+                      On pense qu'on a fait le bon choix. Pourtant on a tous les deux des parents qui sont dedans. C'était une question de prix du lait, aujourd'hui 30 euros de plus, ça ne couvre pas les charges, aucun intérêt de continuer dans ce modèle la parce qu'il faut qu'il nous en reste à nous aussi hein (rire) 
+                   </p>
+                   <p class="onBck">
+                      Jusqu’en 2012, la demande en lait bio n’était pas suffisante pour assurer un écoulement stable de la production, faisant craindre aux agriculteurs ce qui avait pu se pratiquer jusqu’en 2004: un déclassement du lait biologique en lait normal, afin d’être certain de son écoulement. Mais depuis 2012, les choses changent et la demande est bien là, la question aujourd’hui est : comment assurer l’approvisionnement des consommateurs, qui sont 7,6% à acheter du bio régulièrement 
+                   </p>
                 </div>
-                <div class="col-md-8"></div>
-            </div>
-        </div>
-
-                <p style="height: 1700px; margin-bottom: 0"></p>
-
-    </div>
-    <div id="imgBck2">
-        <p style="height: 1700px; margin-bottom: 0px;"></p>
-    </div>
-    <div id="imgBck3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h1 style="color: white; font-weight: bolder; background-color: rgba(0, 13, 26, 0.4); text-align: center;"> Claude Bourguignon</h1> 
-                    <h2>Chercheur en biologie des sols</h2>
-<!--                     <audio autobuffer autoplay>
-                        <source src="assets/sound/" type=""> type="audio/mp3" src=""
-                    </audio> -->
-                </div>
-                <div class="col-sm-8"></div>
-            </div>
-        </div>
+                <!-- hook -->
+             </div>
+          </div>
+       </div>
+   </div>
 
 
+   <div id="imgBck4" style="height: 2000px;">
         
-        
-        <p style="height: 1700px; margin-bottom: 0px;">   
-        </p>
-    </div>
-    
-        <div style="height: 100vh;">
-            <div class="parent-element-to-video">
-                
-                <video id="vid" video autobuffer autoplay loop>
-                    <source id="mp4" src="assets/videos/enterField.mp4" type="video/mp4">
-                </video>
-
-            </div> 
-            <div style="position: relative;" id="refPin1">
-                <p style="font-size: 3vh">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                </p>
-                
-
-            </div>
-    </div>
-
-    <div id="imgBck4">
-        <p style="height: 1700px; margin-bottom: 0px;"></p>
-    </div>
-
-
-        
-
-
-    <div>
-        
-        <div style="height: 100vh;">
-            
-            <div class="parent-element-to-video">
-
-                <video id="vid_1" video autobuffer autoplay loop ">
-                    <source id="mp4" src="assets/videos/tracteur.mp4" type="video/mp4">
-                </video>
-            </div> 
-
-            <div style="position: relative;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-        </div>
-
-    </div>
-
-        
-
-    <div id="sections" class="container-fluid">
-
-        <div class="row">
-            <div id="gauche">
-                    <div class="objet" id="highcharts-3eb3ee9d-0bc5-4590-95d8-42a1aec79b11"></div>
-                    <script>
-                            (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","http://code.highcharts.com/modules/funnel.js","http://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"chart":{"type":"column","polar":false,"style":"{\"fontFamily\":\"\\\"Lucida Grande\\\", \\\"Lucida Sans Unicode\\\", Verdana, Arial, Helvetica, sans-serif\",\"fontSize\":\"12px\"}","width":null},"plotOptions":{"series":{"stacking":"normal","animation":false,"dataLabels":{}}},"title":{"text":"Quantité de calories produites","style":"{ \"color\": \"#333333\", \"fontSize\": \"18px\" }"},"subtitle":{"text":"par hectare et par an","style":"{ \"color\": \"#666666\" }"},"series":[{"name":"Quantité de calories produites","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"type":"column","marker":{}},{"name":"Revenu dégagé","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"type":"column"}],"data":{"csv":"\"null\";\"Quantité de calories produites\";\"Revenu dégagé\"\n\"Exploitation A\";400;6600\n\"Exploitation B\";200;3300\n\"Exploitation C\";150;2475","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"legend":{"enabled":true,"layout":"horizontal"},"tooltip":{"backgroundColor":"#33691e"},"pane":{"background":[]},"responsive":{"rules":[]},"exporting":{},"credits":{"text":"Données DEPHY","href":""}};new Highcharts.Chart("highcharts-3eb3ee9d-0bc5-4590-95d8-42a1aec79b11", options);}}})();
-                    </script>   
-
-                    <iframe id=iframeHidden class="objet" width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/428914701&color=%232e2013&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-                    <iframe class="objet" width="80%" height="300" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/428914701&color=%232e2013&auto_play=true&hide_related=true&show_comments=true&show_user=false&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-            </div> <!-- col-sm-4 -->
-            <div id="droite">
-                    <div class="hook" id="hook0">
-                        <p class="leadPerso">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minus! Tempore culpa vel aliquam sequi, autem, commodi nisi consequuntur sint quisquam aut obcaecati quod beatae cumque quis at officia tempora.   
-                        </p>
-
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quia deleniti omnis quibusdam, voluptate cum facilis quae nobis possimus officiis error tenetur. Quisquam odit et deserunt eveniet nisi numquam tenetur.</h2>
-
-
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quaerat suscipit labore ducimus, pariatur nam placeat, accusamus error incidunt dignissimos nostrum. Doloribus repellendus animi, rerum molestiae saepe culpa assumenda nemo.</p>
-                        
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ea deserunt nam possimus reprehenderit eaque unde quas vero a tenetur iure repellat excepturi, laudantium obcaecati velit quisquam in ex nostrum? </p>
-
-                        <p class="exergue ">
-                            “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nisi doloribus beatae molestiae placeat, similique libero error quas reiciendis neque odio, repellat porro sint vero iste, eveniet quasi sapiente pariatur.”
-                        </p>
-
-
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta saepe asperiores commodi ad culpa modi perferendis accusamus eveniet ea itaque! Repellendus laudantium maiores suscipit culpa, distinctio et reiciendis officiis sed.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor itaque, nesciunt fugiat aut doloremque obcaecati ea fuga cum quis architecto! Fugit ducimus perspiciatis ab, minus et. Quis, eveniet, suscipit. </p>
-
-                        <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos voluptatibus voluptas distinctio </h3>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit numquam sint nisi, id officiis quasi, quis eligendi tempora quam ab, corporis cumque. Voluptas, numquam. Non animi, fuga totam molestias itaque!</p>
-
-                        <p class="exergue ">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, beatae ipsam placeat optio eius, nesciunt atque facere voluptatum cumque suscipit maxime excepturi expedita voluptate ad rerum error officiis cum tempora.
-                        </p>
-                    </div>
-                       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta saepe asperiores commodi ad culpa modi perferendis accusamus eveniet ea itaque! Repellendus laudantium maiores suscipit culpa, distinctio et reiciendis officiis sed.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolor itaque, nesciunt fugiat aut doloremque obcaecati ea fuga cum quis architecto! Fugit ducimus perspiciatis ab, minus et. Quis, eveniet, suscipit. </p>
-
-                        <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos voluptatibus voluptas distinctio </h3>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit numquam sint nisi, id officiis quasi, quis eligendi tempora quam ab, corporis cumque. Voluptas, numquam. Non animi, fuga totam molestias itaque!</p>
-
-                        <p class="exergue ">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, beatae ipsam placeat optio eius, nesciunt atque facere voluptatum cumque suscipit maxime excepturi expedita voluptate ad rerum error officiis cum tempora.
-                        </p>
-            </div> <!-- col-sm-8 -->
-        </div><!-- row -->
-        
-
-    </div>
-
-            <p class="name"> <!-- signature -->
-
-            	Julien Auriach
-
+        <div class="col-sd-12 col-md-8 col-lg-10">
+            <p class="onBck">Pour l’instant les prairies de Sebastien Bouvet représentent moins de 60 hectares, soit mois de la moitié de sa surface totale de 125ha. Le reste est principalement constitué de céréales. 
             </p>
+            <p class="onBck">
+            Mais toutes ne sont pas destinées à être vendues, il en conserve une certaine quantité pour nourrir son cheptel de 45 vaches. Il ne récolte que l’épis du maïs, laissant la tige sur place, pour régénérer le sol en matière organique. Il conserve son maïs en ensilage, c’est à dire qu’il broie le tout en copeaux d’un peu moins d’un centimètre, « sinon les vaches ne digèrent pas », et stocke le tout sous une bâche lestée, en vue d’avoir du fourrage pour l’hiver. C’est une sorte de foin humide (à 40%, contre 15% pour le foin traditionnel). 
+            </p>
+            <p class="onBck">
+            Le problème de son ensilage ? Il ne peut plus continuer à en faire tant lorsqu’il sera en bio, parce que contrairement à l’herbe, nourrir les bêtes avec les rend  «déficitaire en azote », explique Sebastien Bouvet, alors que la paume de sa main est recouverte du dît ensilage. « Du coup on est obligé d'acheter du tourteau de colza. » C’est pour cette raison qu’il implantera beaucoup plus d’herbe maximisant ainsi la surface accessible en pâturage. 
+            </p>
+            <p class="onBck">
+            Les prairies jeunes c'est plus productif. Entre 5 et 7 ans en prairie.
+            </p>
+        </div>
+   </div>
 
-        </article>
+   <div>
+      <div class="parent-element-to-video">
+         <video id="vid_1" video autobuffer autoplay loop style="right:0px;">
+            <source id="mp4" src="assets/videos/tracteur.mp4" type="video/mp4">
+         </video>
+      </div>
+      <div style="position: relative;" id="refPin2">
+         <div id="sections" class="container-fluid">
+            <div class="row">
+               <div id="g1" class="gauche">
+               </div>
+               <!-- col-sm-4 -->
+               <div id="d1"class="droite">
+                  <div class="hook">
+                     <p class="onBck">
+                        « On cultive pas du maïs en bottes, le maïs, c'est essuyé réchauffé », commente Sebastien Bouvet, devant son champ, le dernier qu’il sème en maïs « conventionnel ». 
+                     </p>
+                     <p class="onBck">
+                        C’est que la conversion approche, et il faut que le 15 mai, date à laquelle la convention sera signée, plus aucun intrant chimique ne soit utilisé. Alors on se dépêche de « faire ce que l’on a à faire » avant de ne plus en avoir le droit. 
+                     </p>
+                     <p class="onBck">
+                        En effet, la durée de conversion en Bio dure entre 18 mois et deux ans. Une durée pendant laquelle l’exploitant en conversion doit respecter intégralement le cahier des charges bio tout en ne bénéficiant pas du droit de commercialiser sous label. C’est donc une période difficile à gérer puisque les rendements chutent et que les marges n’augmentent pas. 
+                     </p>
+                     <p class="exergue ">
+                        “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nisi doloribus beatae molestiae placeat, similique libero error quas reiciendis neque odio, repellat porro sint vero iste, eveniet quasi sapiente pariatur.”
+                     </p>
+                  </div>
+                  <!-- col-sm-8 -->
+               </div>
+               <!-- row -->
+            </div>
+         </div>
+      </div>
+   </div>
 
-        <script src="vendor/jQuery.js"></script>
-        <script type="text/javascript" src="vendor/jquery.ScrollMagic.js"></script>
-        <script type="text/javascript" src="vendor/ScrollMagic.js"></script>
-        <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-        <script src="app.js"></script> <!-- lazyloader -->
+      <div id="imgBck3"> <!-- Bourguigon -->
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-6">
+               <h1 style="color: white; font-weight: bolder; background-color: rgba(0, 13, 26, 0.4); text-align: center;"> Claude Bourguignon</h1>
+               <h2>Chercheur en biologie des sols</h2>
+               <!--                     <audio autobuffer autoplay>
+                  <source src="assets/sound/" type=""> type="audio/mp3" src=""
+                  </audio> -->
 
+                <audio controls="controls">
+                    <source src="music.mp3" type="audio/mp3" />
+                    Votre navigateur n'est pas compatible
+                </audio>
+            </div>
+            <div class="col-sm-8"></div>
+         </div>
+      </div>
+      <p style="height: 1700px; margin-bottom: 0px;">   
+      </p>
+   </div>
+
+
+   <p class="name">
+      <!-- signature -->
+      Julien Auriach
+   </p>
+   </article>
+   <script src="vendor/jQuery.js"></script>
+   <script type="text/javascript" src="vendor/jquery.ScrollMagic.js"></script>
+   <script type="text/javascript" src="vendor/ScrollMagic.js"></script>
+   <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+   <script src="app.js"></script> <!-- lazyloader -->
 </body>
 </html>
