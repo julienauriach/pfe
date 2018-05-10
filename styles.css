@@ -161,7 +161,8 @@ p.leadPerso{
 	color: white;
 	background-color: rgba(0, 13, 26, 0.4);
 	font-size: 24px;
-	padding: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 	padding-top: 0px;
 	margin-top: 40vw;
 	margin-bottom: 250px;
