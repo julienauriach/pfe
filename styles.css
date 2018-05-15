@@ -77,7 +77,6 @@ p {
 
 .containerVideoText {
 	position: relative;
-	height: 200vh;
 }
 .parent-element-to-video {
     overflow: hidden;
