@@ -131,18 +131,18 @@ display: none;
 display: none;
 }
 
-@media (min-width: 400px), (orientation: landscape) {
+@media (min-width: 500px), (orientation: landscape) {
 .objetMobileV
 	{
 		display: none;
 	}
 }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media (max-width: 500px) and (orientation: portrait) {
 	.objetMobileV
 	{
 		display: inline;
-		width: 100vw;
+		width: 80vw;
 	}
 }
 
