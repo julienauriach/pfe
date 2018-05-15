@@ -48,8 +48,9 @@ p {
    margin-bottom: 0px;
    line-height: 1.0em;
    font-family: 'Cormorant';
-   font-size: 1.6em;
-   text-align: center;
+   font-size: 1.17em;
+   text-align: justify;
+   text-indent: 17%;
 }
 .inter{
 	line-height: 1.0em;
