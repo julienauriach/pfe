@@ -50,7 +50,13 @@ p {
    font-family: 'Cormorant';
    font-size: 1.6em;
    text-align: center;
-
+}
+.inter{
+	line-height: 1.0em;
+   font-family: 'Cormorant';
+   font-size: 1.6em;
+   padding-bottom: 5vh;
+   color: red;
 }
 
 
@@ -106,7 +112,7 @@ p {
 }
 .onBck{
 	color: white;
-	background-color: rgba(0, 13, 26, 0.6);
+	background-color: rgba(0, 13, 26, 0.67);
 	padding-left: 4.1vh;
 	padding-right: 4.1vh;
 	padding-bottom: 30px;
@@ -232,6 +238,5 @@ display: none;
 }
 
 
-/* EXERGUE  */
 
 
