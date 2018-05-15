@@ -142,6 +142,7 @@ display: none;
 	.objetMobileV
 	{
 		display: inline;
+		width: 100vw;
 	}
 }
 
