@@ -130,8 +130,21 @@ display: none;
 {
 display: none;
 }
-.imgMobileBck{
+
+@media screen and (orientation: landscape) {
+.objetMobileV
+	{
+		display: none;
+	}
 }
+
+@media screen and (orientation: portrait) {
+	.objetMobileV
+	{
+		display: inline;
+	}
+}
+
 
 .row
 {
