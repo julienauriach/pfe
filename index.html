@@ -18,20 +18,44 @@
 <body>
 
 <!-- TITRE -->
-   <div id="imgBck1">
-      <p style="height: 30vh; margin-bottom: 0"></p>
+   <div id="imgBck1" class="container-fluid">
+      <p style="height: 40vh; margin-bottom: 0"></p>
       <div class="container-fluid">
          <div class="row">
             <div class="col-md-4">
                <h1 style="color: white; font-weight: bolder; background-color: rgba(0, 13, 26, 0.4); text-align: center;"> Bio 2.0 </h1>
-               <!--                     <audio autobuffer autoplay>
-                  <source src="assets/sound/" type=""> type="audio/mp3" src=""
-                  </audio> -->
+               <p style="height: 50vh;"></p>
             </div>
-            <div class="col-md-8"></div>
+          </div>
+      </div>
+   </div>
+
+<!-- VINCENT COUVERT -->
+   <div class="containerVideoText">
+      <div class="parent-element-to-video">
+         <video class="videoMobileEvanescente videoBck" video autobuffer autoplay loop">
+            <source src="assets/videos/enterField.mp4" type="video/mp4">
+         </video>
+         <img class="imgMobileBck" src="assets/images/imgReplaceEnterField.jpg" style="width: 177.77777778vh;min-width: 100%; min-height: 56.25vw;"></img>
+      </div>
+      <div class="container-fluid overlay">
+         <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            <div class="col-lg-4 col-md-8 col-sm-10">
+               <div class="onBck">
+                  <p style="margin-top: 0px">
+                     « On cultive pas du maïs en bottes, le maïs, c'est essuyé réchauffé », commente Sebastien Bouvet, devant son champ, le dernier qu’il sème en maïs « conventionnel ». 
+                  </p>
+                  <p>
+                     C’est que la conversion approche, et il faut que le 15 mai, date à laquelle la convention sera signée, plus aucun intrant chimique ne soit utilisé. Alors on se dépêche de « faire ce que l’on a à faire » avant de ne plus en avoir le droit. 
+                  </p>
+                  <p>
+                     En effet, la durée de conversion en Bio dure entre 18 mois et deux ans. Une durée pendant laquelle l’exploitant en conversion doit respecter intégralement le cahier des charges bio tout en ne bénéficiant pas du droit de commercialiser sous label. C’est donc une période difficile à gérer puisque les rendements chutent et que les marges n’augmentent pas. 
+                  </p>
+               </div>
+            </div>
          </div>
       </div>
-      <p style="height: 1700px; margin-bottom: 0"></p>
    </div>
    
 <!-- SALLE DE TRAITE -->
@@ -89,9 +113,9 @@
    <div class="containerVideoText">
       <div class="parent-element-to-video">
          <video class="videoMobileEvanescente videoBck" video autobuffer autoplay loop">
-            <source id="mp4" src="assets/videos/tracteur.mp4" type="video/mp4">
+            <source src="assets/videos/tracteur.mp4" type="video/mp4">
          </video>
-         <img class="imgMobileBck" src="assets/images/imgReplaceTractor.jpg" style="width: 177.77777778vh;min-width: 100%; min-height: 56.25vw;"></img>
+         <img class="imgMobileBck" src="assets/images/imgReplaceTractor.jpg" style="width: 177.77777778vh;min-width: 100%; min-height: 56.25vw; margin-left: -20vh"></img>
       </div>
       <div class="container-fluid overlay">
          <div class="row">
@@ -141,10 +165,12 @@
       Julien Auriach
    </p>
    <script src="vendor/jQuery.js"></script>
+    <script type="text/javascript" src="vendor/popper.min.js"></script>
+   <script src="vendor/bootstrap.js"></script>
 <!--    <script type="text/javascript" src="vendor/jquery.ScrollMagic.js"></script>
    <script type="text/javascript" src="vendor/ScrollMagic.js"></script> -->
    <script src="app.js"></script>
-   <script type="text/javascript" src="vendor/popper.min.js"></script>
+
 </body>
 </html>
 
